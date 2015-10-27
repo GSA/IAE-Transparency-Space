@@ -1,0 +1,6 @@
+### This is a test...
+This is to test working locally on Markdown files and being able to push to my forked project on GitHub.
+
+The question still remains how I would be able to pull and rebase a fork…
+
+Now I am checking to make sure the GitHub Desktop application can catch this uncommitted change…and this one.
