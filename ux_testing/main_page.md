@@ -8,3 +8,5 @@ You can add files by clicking the plus sign next to the name of the fork - to cr
 
 # Once completed with edits/additions
 When we are done editing or adding things, we can do a commit. If operating in the main branch (the fork), select create new branch and start a pull request; otherwise, add commit message, then perform pull request manually.
+
+# Something else
