@@ -30,9 +30,10 @@ Be sure you have downloaded the GitHub Desktop application: [https://desktop.git
 15. Your commit message should be there. You can add a detailed description. Click "Send Pull Request".
 
 
-# Process Pull Reqeust
+# Process Pull Request
 1. Click "Pull Requests" in the right navigation pane.
 2. Select the pull request.
 3. Click "Merge Pull Request".
 4. Click "Delete Branch" to remove the branch created for the pull request.
 
+# Making Fork Collaborator Only
