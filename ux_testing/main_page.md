@@ -1,4 +1,6 @@
 # Add Page
+
+## Using GitHub
 1. Tap the plus sign next to the name of the branch (should be sam_web_standards_master).
 2. Put the name of the file in the text box. (To create a directory add a forward slash after the directory name.)
 3. Use markdown to add text-based content.
@@ -7,6 +9,24 @@
 6. You can add an extended description if you would like.
 7. Click "commit changes".
 8. In the subsequent page, ensure the branch being displayed resides in BrianGilmanGSA/openIAE (not GSA/openIAE).
+
+## Using GitHub Desktop
+Be sure you have downloaded the GitHub Desktop application: [https://desktop.github.com](https://desktop.github.com)
+
+1. Make sure you are viewing the sam_web_standards_master branch (if not, use the drop down to change branches).
+2. Click "Clone to Desktop".
+3. Choose where to store the directory with all the files locally.
+4. Launch the GitHub Desktop application.
+5. Create a new branch.
+6. Make sure the sam_web_standards_master branch is displayed in the main line of the dark area.
+7. Make sure your new branch is labeled underneath.
+8. Create a new file using a plain text editor (or Markdown editor)
+9. Save the file to the appropriate subdirectory.
+10. Go back to the GitHub Desktop application.
+11. You should see 1 uncommitted change.
+12. Add a commit message and optional expanded description.
+13. 
+
 
 # Process Pull Reqeust
 1. Click "Pull Requests" in the right navigation pane.
