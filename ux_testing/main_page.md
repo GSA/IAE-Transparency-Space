@@ -8,4 +8,9 @@
 7. Click "commit changes".
 8. In the subsequent page, ensure the branch being displayed resides in BrianGilmanGSA/openIAE (not GSA/openIAE).
 
+# Process Pull Reqeust
+1. Click "Pull Requests" in the right navigation pane.
+2. Select the pull request.
+3. Click "Merge Pull Request".
+4. Click "Delete Branch" to remove the branch created for the pull request.
 
