@@ -1,12 +1,11 @@
-# Create branch
-We create a branch so we do not interfere with the master line - the trunk of a tree.
+# Add Page
+1. Tap the plus sign next to the name of the branch (should be sam_web_standards_master).
+2. Put the name of the file in the text box. (To create a directory add a forward slash after the directory name.)
+3. Use markdown to add text-based content.
+4. Once completed with the initial content, in the "commit changes" area, select "create a new branch..." (the default branch name is fine)
+5. Add a brief description of the changes made.
+6. You can add an extended description if you would like.
+7. Click "commit changes".
+8. In the subsequent page, ensure the branch being displayed resides in BrianGilmanGSA/openIAE (not GSA/openIAE).
 
-**Note:** It is possible to edit directly in the main trunk, then tell GitHub to create a branch and submit a pull request.
 
-# Add files
-You can add files by clicking the plus sign next to the name of the fork - to create directories just type a forward-slash "/" then the file name.
-
-# Once completed with edits/additions
-When we are done editing or adding things, we can do a commit. If operating in the main branch (the fork), select create new branch and start a pull request; otherwise, add commit message, then perform pull request manually.
-
-# Something else
