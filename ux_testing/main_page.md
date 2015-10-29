@@ -1,4 +1,4 @@
-# Add Page
+# Add/Edit Page
 
 ## Using GitHub
 1. Tap the plus sign next to the name of the branch (should be sam_web_standards_master).
