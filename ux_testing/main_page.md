@@ -23,9 +23,11 @@ Be sure you have downloaded the GitHub Desktop application: [https://desktop.git
 8. Create a new file using a plain text editor (or Markdown editor)
 9. Save the file to the appropriate subdirectory.
 10. Go back to the GitHub Desktop application.
-11. You should see 1 uncommitted change.
+11. You should see 1 uncommitted change. (Make sure you click "update from sam_web_standards_master" before committing.)
 12. Add a commit message and optional expanded description.
-13. 
+13. Click "Pull Request".
+14. Make sure the target branch is **not** GSA/openIAE (or anything containing "GSA/").
+15. Your commit message should be there. You can add a detailed description. Click "Send Pull Request".
 
 
 # Process Pull Reqeust
