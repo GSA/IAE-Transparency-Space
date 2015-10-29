@@ -36,4 +36,12 @@ Be sure you have downloaded the GitHub Desktop application: [https://desktop.git
 3. Click "Merge Pull Request".
 4. Click "Delete Branch" to remove the branch created for the pull request.
 
-# Making Fork Collaborator Only
+# Making Fork Collaborator Only (fork owner only) and Adding Collaborators
+1. Navigate to BrianGilman/openIAE.
+2. Click on the gear in the right navigation.
+3. Select restrict editing to collaborators only.
+4. Click “Collaborators” in the left menu.
+5. Enter your password to confirm.
+6. Begin entering username of desired collaborator.
+7. When you see the correct user in the suggestion list, click that person.
+8. They are now a collaborator and can edit files within the space.
