@@ -40,7 +40,6 @@ Used to display an individual results within a list of search results. Contains 
 
 [Need image or live coded results, with technical description]
 
-
 ## Pagination
 The pagination element is used in circumstances where the content being displayed within a site area that cannot be fit on one page (search results, for example). If JavaScript is enabled, continuous scrolling methods can be used in place of the pagination element; however, this element should exist in case JavaScript is disabled.
 
