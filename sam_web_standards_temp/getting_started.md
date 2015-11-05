@@ -61,12 +61,19 @@ URLs should be case-*insensitive*; therefore, the following URL pairs should res
 
 This allows communication collateral to be built in a more human-readable manner by using upper- and lower-case letters to separate words within URLs while simultaneously allowing direct copy and paste of the URL into a browser.
 
-### Information Architecture
-Information Architecture refers to the layout and depth of pages within a website. The *SAM Web Standards* recognizes four levels of navigation for page-related content.
+### Information Architecture (navigation)
+Information Architecture, in terms of navigation, refers to the layout and depth of pages within a website. The *SAM Web Standards* recognizes four levels of navigation for page-related content.
 
 1. Level 0: This level of navigation is contained with the header and footer components and is used to navigate between system-wide pages (the Legal page, for example) and between categories within the system (Wages, for example). From a front-end user perspective, this results in a change from transition.SAM.gov to something like transition.SAM.gov/wages.
 2. Level 1: This level of navigation is appended to the header area and provides navigation within a category; thereby, allowing each category to have primary pages (Due to Be Revised within Wages, for example). Resulting in something like transition.SAM.gov/wages/to-be-revised.
 3. Levels 2 through 4: These levels of navigation utilize the sidebar element provided by the *US Web Standards*. Further, these levels of navigation should be avoided, if possible (or practical); thereby, reducing the amount of navigation and “drilling down” I need to perform as a front-end user to get to the content I am interested in.
+
+### Information Architecture (content)
+Information Architecture, in terms of content, refers to how content is displayed. This could be the ordering of information within a block of content (chapters within a book, paragraphs within a chapter, sentences within a paragraph, and so on) or how blocks of content are arranged within a page (books in a library).
+
+For the purposes of the *SAM Web Standards* we recognize two primary types of content from a front-end user perspective: content and metadata. Content refers to titles of pages, body copy, attachments, and so on. Metadata refers to details related to *that* content; posting date, related category, and so on.
+
+Grouping content and metadata separately allows me to quickly discern the *content* of a page from the information *about* the content of a page depending on which I, as a front-end user, am interested in. Further, content and metadata should also be ordered, as much as possible, in a way that gives me what I am mostly likely concerned about first, with the details later. For reference, see the Inverted Pyramid from the profession of journalism.
 
 ### Content-focused and printable
 For content pages (as opposed to those designed as portals or navigation purposes), the text-based content should not be overpowered by the surrounding navigation or branding (chrome). Normal operating distance from the screen should also be considered. To allow users the ability to adjust font sizes using their browser, front-end developers and designers should use relative font sizing (ems) and not stipulate font sizes less than one em. Increased leading (the space between lines) makes it easier for readers to discern one line of text from the next.
