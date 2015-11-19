@@ -16,7 +16,7 @@ Be sure you have downloaded the GitHub Desktop application: [https://desktop.git
 1. Make sure you are viewing the sam_web_standards_master branch (if not, use the drop down to change branches).
 2. Click "Clone in Desktop".
 
-<img src=/sam_web_standards_temp/images/cloneindesktop.png width=80 />
+<img src=/sam_web_standards_temp/images/cloneindesktop.png width=120 />
 
 3. Choose where to store the directory with all the files locally.
 4. Launch the GitHub Desktop application.
