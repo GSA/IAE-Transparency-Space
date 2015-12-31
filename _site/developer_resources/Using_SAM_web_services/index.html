@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1404.34">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1"><!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+
+  <title>GSA IAE | Using the SAM Web Services</title>
+  <meta property="og:title" content="GSA IAE | Using the SAM Web Services" />
+
+
+
+  <meta name="description" content="">
+  <meta property="og:description" content="" />
+
+
+  <link rel="canonical" href="/developer_resources/Using_SAM_web_services/" />
+
+<!--[if lt IE 9]>
+  <script src="/sam_api/assets/js/vendor/html5shiv.js"></script>
+<![endif]-->
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/ico" href="/sam_api/assets/img/favicons/favicon.ico" />
+  <link rel="icon" type="image/png" href="/sam_api/assets/img/favicons/favicon.png" />
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/sam_api/assets/img/favicons/favicon-192.png" />
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <link rel="apple-touch-icon-precomposed" href="/sam_api/assets/img/favicons/favicon-57.png">
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/sam_api/assets/img/favicons/favicon-72.png">
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/sam_api/assets/img/favicons/favicon-114.png">
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/sam_api/assets/img/favicons/favicon-144.png">
+
+<!-- CSS
+================================================== -->
+  <link rel="stylesheet" href="/sam_api/assets/css/google-fonts.css">
+  <link rel="stylesheet" href="/sam_api/assets-styleguide/css/prism.css">
+  <link rel="stylesheet" href="/sam_api/assets/css/styleguide.css">
+ <a class="skipnav" href="#main-content">Skip to main content</a>
+
+<header class="usa-site-header" role="banner">
+
+  <div class="usa-disclaimer">
+    <span class="usa-disclaimer-official">
+      <img class="usa-flag_icon" alt="US flag signifying that this is a United States Federal Government website" src="/sam_api/assets/img/us_flag_small.png">
+      An official website of the United States Government
+    </span>
+    <span class="usa-disclaimer-stage">This site is currently in alpha. <a href="https://18f.gsa.gov/dashboard/stages/#alpha">Learn more.</a></span>
+  </div>
+  
+  <nav class="usa-site-navbar">
+      <a class="menu-btn" href="#">Menu</a>
+      <div class="logo" id="logo">
+        <h1>
+          <a href="/sam_api/" accesskey="1" title="Home" aria-label="Home">
+          openIAE</a>
+        </h1>
+      </div>
+      <div style="float:right;">
+        <img src="/sam_api/assets-styleguide/img/logo-gsa.png" />
+        <img src="/sam_api/assets-styleguide/img/logo-star.png" />
+      </div>
+    </nav>
+
+</header>
+</span></p>
+<p class="p1"><span class="s1">   <nav>
+    <ul class="usa-sidenav-list">
+          <li><a href="/sam_api/developer_resources/About_SAM_data/" class="basics">About SAM Data</a></li>
+          <li><a href="/sam_api/developer_resources/Using_SAM_data_extracts/" class="basics">Using SAM Data Extracts</a></li>
+          <li><a href="https://gsa.github.io/sam_api/sam/" target="_blank" class="basics">Using the SAM API</a></li>
+          <li><a href="/sam_api/developer_resources/Using_SAM_web_services/" class="basics">Using SAM Web Services</a></li>
+         <!--<li><a href="SAM_kb.html" class="sam_kb">SAM Knowledge Base</a></li>-->
+	  <li><a href="/sam_api/developer_resources/Access_SAM_data/" class="access">Accessing SAM Data</a></li>
+	  <li><a href="/sam_api/developer_resources/FPDS_data_docs/" class="basics">FPDS Data Documentation</a></li>
+	  <li><a href="/sam_api/developer_resources/IAE_Architecture/" class="basics">About IAE Architecture</a></li>
+          <!--<li><a href="../blog/" class="blog">Blog</a></li>-->
+        </ul>
+    </nav>
+<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><h3 id="using-sam-web-services">Using SAM Web Services</h3>
+<p>SAM offers web services to search for both Entity data and Exclusions data.<br /></p>
+
+<p><b>Entity Management data can be searched by:</b><br /></p>
+
+<ul>
+  <li><code>DUNSNumber</code> (Both DUNS and DUNS + 4)</li>
+  <li><code>CAGECode</code></li>
+  <li><code>taxpayerIdentificationNumber</code> (requires addtional access  <a href="http://gsa.github.io/openIAE/developer_resources/Access_SAM_data.html" title="Data Access">Click here</a> for more information.)<br /></li>
+  <li><code>startDate</code> &amp; <code>endDate</code> (Maximum search time allowed between startDate and endDate is 24 hours.)</li>
+  <li><code>registrationStatus</code></li>
+</ul>
+
+<p>The web service returns the Entity Management Record in XML format for you to consume into your local application. The Entity Management record has four areas:<br />
+* <code>coreData</code><br />
+* <code>assertions</code><br />
+* <code>repsAndCerts</code> (Representations and Certifications)<br />
+* <code>POCs</code>(Points of Contact)<br /></p>
+
+<p>You have to put a “Y” in any one of the above element tags to get a result from the web service. <br /></p>
+
+<p><b>EndPoint:</b> <a href="https://gw.sam.gov/SAMWS/1.0/Entity">https://gw.sam.gov/SAMWS/1.0/Entity</a><br />
+<b>WSDL File:</b><a href="https://gw.sam.gov/SAMWS/1.0/Entity?wsdl">https://gw.sam.gov/SAMWS/1.0/Entity?wsdl</a></p>
+
+<p>Need more help? Click <a href="https://github.com/GSA/IAE-Architecture/tree/master/as-is/tech-docs/SAM">here</a> for the SAM entity web service management tutorial.<br /> <br /></p>
+
+<p><b>Exclusions can be searched by:</b> <br />
+* <code>Name</code> (including Business Name, First/Last Name, Partial Name)<br />
+* <code>Social Security Number</code><br />
+* <code>Taxpayer Identification Number</code><br />
+* <code>Cage Code</code><br />
+* <code>DUNS</code> number.<br /> <br />If there is a match the web service returns the Public Exclusion Record in XML for you to consume into your own system.<br />
+<b>EndPoint:</b> <a href="https://gw.sam.gov/SAMWS/1.0/ExclusionSearch">https://gw.sam.gov/SAMWS/1.0/ExclusionSearch</a> <br />
+<b>WSDL File:</b><a href="https://gw.sam.gov/SAMWS/1.0/ExclusionSearch?wsdl">https://gw.sam.gov/SAMWS/1.0/ExclusionSearch?wsdl</a></p>
+
+<h3 id="testing-sam-web-services">Testing SAM Web Services</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Web Service</th>
+      <th>Endpoint in Test Environment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SAM Entity Management</td>
+      <td><a href="https://test.sam.gov/SAMWS/1.0/Entity">https://test.sam.gov/SAMWS/1.0/Entity</a></td>
+    </tr>
+    <tr>
+      <td>SAM Exclusion</td>
+      <td><a href="https://test.sam.gov/SAMWS/1.0/ExclusionSearch">https://test.sam.gov/SAMWS/1.0/ExclusionSearch</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><b>Test IDs:</b></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID Name</th>
+      <th>Password</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SAMPublic</td>
+      <td>Contact IAETransparency@gsa.gov</td>
+      <td>The public Entity Management Web Service requires authentication</td>
+    </tr>
+    <tr>
+      <td>SAMFOUO</td>
+      <td>Contact IAETransparency@gsa.gov</td>
+      <td>For Official Use Only</td>
+    </tr>
+    <tr>
+      <td>SAMSensitive</td>
+      <td>Contact IAETransparency@gsa.gov</td>
+      <td>Offers more secure data including banking information and MPIN.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>A test id is not needed for the SAM Exclusions XML web service. There is no role or authentication requirement.
+For more information on SAM account access levels click <a href="http://gsa.github.io/openIAE/developer_resources/Access_SAM_data.html">here</a>.</p>
+
+<p>Tools available:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/GSA/IAE-Architecture/tree/master/as-is/tech-docs/SAM">Web Services tutorial</a></td>
+      <td>Documents how to build an Entity Management web service. Includes various sample request and response for Entity Management.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/GSA/IAE-Architecture/tree/master/as-is/tech-docs/SAM/SAMWebServicesExtractsMappingsv1.0">Web Serivces field mappings</a></td>
+      <td>Field and tag mappings for Entity Management Web Services.</td>
+    </tr>
+    <tr>
+      <td><a href="">Soap UI project for Web Services</a></td>
+      <td>Project ready for import into Soap UI. Coming Soon!</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/GSA/IAE-Architecture/blob/master/as-is/tech-docs/SAM/SAM%20Functional%20Data%20Dictionary%20v4.0.pdf?raw=true">SAM Functional Data Dictionary</a></td>
+      <td>All SAM field definitions and enumerations.</td>
+    </tr>
+    <tr>
+      <td><a href="">Web Services Response Schema Documentation</a></td>
+      <td>Coming Soon!</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Comments? Questions?  <a href="https://github.com/GSA/openIAE/issues">Talk to us</a>.</p>
+
+<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><div class="usa-grid">
+  <div class="usa-width-one-half">
+      <p><a href="http://www.gsa.gov/developer">GSA.gov/developer</a></p>
+  <p><a href="http://github.com/gsa">github.com/gsa</a></p>
+  </div>
+  <div class="usa-width-one-half usa-end-row">
+    <p>As a work of the United States government, this project is <a href="/blob/18f-pages/LICENSE.md">in the public domain</a>.</p>
+  </div>
+</div><span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1">   <script src="/sam_api/assets/js/vendor/jquery-1.11.3.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="/sam_api/assets/js/vendor/selectivizr-min.js"></script>
+    <script src="/sam_api/assets/js/vendor/respond.js"></script>
+    <script src="/sam_api/assets/js/vendor/rem.min.js"></script>
+  <![endif]-->
+  <script src="/sam_api/assets-styleguide/js/vendor/prism.js"></script>
+  <script src="/sam_api/assets-styleguide/js/styleguide.js"></script><span class="Apple-converted-space"> </span></span></p>
+</body>
+</html>
