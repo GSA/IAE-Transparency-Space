@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1404.34">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1"><!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+
+  <title>GSA IAE | Access SAM Data</title>
+  <meta property="og:title" content="GSA IAE | Access SAM Data" />
+
+
+
+  <meta name="description" content="">
+  <meta property="og:description" content="" />
+
+
+  <link rel="canonical" href="/developer_resources/Access_SAM_data/" />
+
+<!--[if lt IE 9]>
+  <script src="/sam_api/assets/js/vendor/html5shiv.js"></script>
+<![endif]-->
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/ico" href="/sam_api/assets/img/favicons/favicon.ico" />
+  <link rel="icon" type="image/png" href="/sam_api/assets/img/favicons/favicon.png" />
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/sam_api/assets/img/favicons/favicon-192.png" />
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <link rel="apple-touch-icon-precomposed" href="/sam_api/assets/img/favicons/favicon-57.png">
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/sam_api/assets/img/favicons/favicon-72.png">
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/sam_api/assets/img/favicons/favicon-114.png">
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/sam_api/assets/img/favicons/favicon-144.png">
+
+<!-- CSS
+================================================== -->
+  <link rel="stylesheet" href="/sam_api/assets/css/google-fonts.css">
+  <link rel="stylesheet" href="/sam_api/assets-styleguide/css/prism.css">
+  <link rel="stylesheet" href="/sam_api/assets/css/styleguide.css">
+ <a class="skipnav" href="#main-content">Skip to main content</a>
+
+<header class="usa-site-header" role="banner">
+
+  <div class="usa-disclaimer">
+    <span class="usa-disclaimer-official">
+      <img class="usa-flag_icon" alt="US flag signifying that this is a United States Federal Government website" src="/sam_api/assets/img/us_flag_small.png">
+      An official website of the United States Government
+    </span>
+    <span class="usa-disclaimer-stage">This site is currently in alpha. <a href="https://18f.gsa.gov/dashboard/stages/#alpha">Learn more.</a></span>
+  </div>
+  
+  <nav class="usa-site-navbar">
+      <a class="menu-btn" href="#">Menu</a>
+      <div class="logo" id="logo">
+        <h1>
+          <a href="/sam_api/" accesskey="1" title="Home" aria-label="Home">
+          openIAE</a>
+        </h1>
+      </div>
+      <div style="float:right;">
+        <img src="/sam_api/assets-styleguide/img/logo-gsa.png" />
+        <img src="/sam_api/assets-styleguide/img/logo-star.png" />
+      </div>
+    </nav>
+
+</header>
+</span></p>
+<p class="p1"><span class="s1">   <nav>
+    <ul class="usa-sidenav-list">
+          <li><a href="/sam_api/developer_resources/About_SAM_data/" class="basics">About SAM Data</a></li>
+          <li><a href="/sam_api/developer_resources/Using_SAM_data_extracts/" class="basics">Using SAM Data Extracts</a></li>
+          <li><a href="https://gsa.github.io/sam_api/sam/" target="_blank" class="basics">Using the SAM API</a></li>
+          <li><a href="/sam_api/developer_resources/Using_SAM_web_services/" class="basics">Using SAM Web Services</a></li>
+         <!--<li><a href="SAM_kb.html" class="sam_kb">SAM Knowledge Base</a></li>-->
+	  <li><a href="/sam_api/developer_resources/Access_SAM_data/" class="access">Accessing SAM Data</a></li>
+	  <li><a href="/sam_api/developer_resources/FPDS_data_docs/" class="basics">FPDS Data Documentation</a></li>
+	  <li><a href="/sam_api/developer_resources/IAE_Architecture/" class="basics">About IAE Architecture</a></li>
+          <!--<li><a href="../blog/" class="blog">Blog</a></li>-->
+        </ul>
+    </nav>
+<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><h3 id="sam-data-access-request">SAM Data Access Request</h3>
+
+<h4 id="sam-roles-and-access">SAM Roles and Access</h4>
+<p>SAM provides a number of roles to fit the needs of users based on mission requirements and need-to-know.  For those users needing public information (governed by the Freedom of Information Act (FOIA)), there is no need to even have a SAM account to use the website.  Others needing more sensitive information to use in their Federal government systems, such as Taxpayer Identification Number (TIN) or registrant banking information will need to submit a data access request on-line in SAM to gain the required role.</p>
+
+<h5 id="sam-role-definitions">SAM Role Definitions</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>SAM Role</th>
+      <th>Definitions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Public / No SAM Account</td>
+      <td>A user that has not created a SAM user account.  Public access only.</td>
+    </tr>
+    <tr>
+      <td>Authenticated User</td>
+      <td>A user that has created and activated a SAM individual or system user account, but has not requested any specific data access role. <br /> Note: Federal government users who create their SAM user account using their Federal government e-mail address automatically have the ability to view For Official User Only (FOUO) information on the SAM.gov website including those registrants who opted out of public search, registrant’s TIN, and the FOUO POCs. To see FOUO information, Federal government users need to log in before searching.</td>
+    </tr>
+    <tr>
+      <td>FOUO Entity Management Data Viewer</td>
+      <td>A user that has access to For Official Use Only (FOUO) information on the SAM.gov website, extracts, and web services. <br /> FOUO information contained in the extracts and web services includes FOUO POCs, D&amp;B Linkage, and D&amp;B Monitoring.</td>
+    </tr>
+    <tr>
+      <td>Sensitive Entity Management Data Viewer</td>
+      <td>A user that has access to sensitive information on the SAM.gov website, extracts, and web services. <br />Sensitive information contained in the extracts and web services includes all FOUO information, plus the TIN (which is either an Employer Identification Number (EIN) or Social Security Number (SSN)), the U.S. banking information for Electronic Funds Transfer (EFT), and the MPIN.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="sam-role-to-access-matrix">SAM Role-to-Access Matrix</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>SAM Role</th>
+      <th>SAM Extract</th>
+      <th>SAM Web Service</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No SAM Account</td>
+      <td>Entity Management Data Package Public*</td>
+      <td>No web service access</td>
+    </tr>
+    <tr>
+      <td>Authenticated User</td>
+      <td>Entity Management Data Package Public*</td>
+      <td>Entity Management Web Service Public</td>
+    </tr>
+    <tr>
+      <td>FOUO Entity Management Data Viewer</td>
+      <td>Entity Management Data Package FOUO</td>
+      <td>Entity Management Web Service FOUO</td>
+    </tr>
+    <tr>
+      <td>Sensitive Entity Management Data Viewer</td>
+      <td>Entity Management Data Package Sensitive</td>
+      <td>Entity Management Web Service Sensitive</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example: You are a Federal employee at USAID, working on a system that requires you to access vendor’s banking information.   You plan to download a daily file (extract) to your system so you can access the information locally.  You would need an extract that contains sensitive (financial) information.  You need the Entity Management Data Package Sensitive, which means you must request the Sensitive Entity Management Data Viewer role.
+With the SAM roles, you will have access to the information on the website, the extract, and the web service.  There is no need for a separate request for each.  It is up to you how to consume the data.</p>
+
+<h4 id="data-access-request-process">Data Access Request Process</h4>
+
+<p>The data access request process is where a SAM user requests access to information of a higher sensitivity level.  With the SAM roles, they may consume this data either by viewing it on the website, by downloading the extracts, or through the web services.  The users may have an individual or system account.
+SAM system accounts may have up to 3 points of contact (POC).  Keeping POCs on your SAM system account updated is very important.  Only a POC is allowed to request a higher level of access to the SAM data.  For directions on updating POCs, please refer to Appendix A.
+Please be advised. if you only have one POC listed on your SAM system account and that POC leaves your organization,  you will have to create another SAM system account. That is why we recommend maintaining all three POCs for a SAM system account.
+For security reasons, SAM administrators may not alter system account information without the explicit consent of the account POC. If the POC separates or is no longer available to administer the account, another team member will have to generate a new SAM system account and initiate a new data access request.</p>
+
+<h4 id="locating-the-data-access-request-for-an-individual-account">Locating the Data Access Request for an Individual Account</h4>
+
+<ol>
+  <li>Log into SAM.gov.</li>
+  <li>In the MY SAM menu, select Data Access &gt; Individual Data Access Request</li>
+</ol>
+
+<p><img src="../images/DAR-Menu1.png" class="markdown-image-inline" /></p>
+
+<ol>
+  <li>In the Select Data page, scroll down.  Select the Data Access Role and User Type, and then click NEXT.</li>
+</ol>
+
+<p><img src="../images/DAR-Menu2.png" class="markdown-image-inline" /></p>
+
+<p>Locating the Data Access Request for a System Account
+Log into SAM.gov
+In the MY SAM menu select System Data Access &gt; System Data Access Request</p>
+
+<p><img src="../images/DAR-Menu3.png" class="markdown-image-inline" /></p>
+
+<p>In the Select Data page, scroll down.  Select the Data Access Role and then click NEXT.</p>
+
+<p><img src="../images/DAR-Menu4.png" class="markdown-image-inline" /></p>
+
+<h5 id="completing-the-data-access-request-form">Completing the Data Access Request form</h5>
+<p>From here, you must complete the Approver Information and Justification Reason sections.  This process is only a few minutes if you have the information ready.
+<img src="../images/DAR-Menu5.png" class="markdown-image-inline" /></p>
+
+<p><strong>Government Sponsor/Supervisor</strong> – A Federal government official must attest that the requestor requires the higher sensitive data to perform their duties and has the necessary permissions and clearances to do so.
+<strong>Government Security Official</strong> – Due to the information SAM provides, all users must undergo a Security Training and Awareness as mandated by their agencies.  The security official will attest that the requestor has taken and passed this training.</p>
+
+<p><img src="../images/DAR-Menu6.png" class="markdown-image-inline" /></p>
+
+<p><strong>Justification Reason</strong> – Please provide a concise rationale for requiring higher sensitivity data. Reference the specific non-public data elements you need and describe the Federal mission supported. Keep the explanation under 500 characters total, including spaces.</p>
+
+<p><img src="../images/DAR-Menu7.png" class="markdown-image-inline" /></p>
+
+<p>Before clicking the SUBMIT button, please notice the link above (Data Access Agreement Form).  This is the SAM Non-Disclosure Agreement and System Authorization Access Request (SAAR).  Please download this PDF and save it.</p>
+
+<h4 id="the-approval-process">The Approval Process</h4>
+
+<p>Once you click SUBMIT, the approval process begins.  The request must be approved by the following in order:</p>
+
+<ul>
+  <li>Government Supervisor/Sponsor</li>
+  <li>Government Security Officer</li>
+  <li>GSA</li>
+</ul>
+
+<p>As soon as you click <strong>SUBMIT</strong> the Government Sponsor/Supervisor will get an automated email from SAM requesting a decision.  They must click the link in the email, provide a justification (under 500 characters), and click <strong>SUBMIT</strong>.  As soon that approver submits, an email goes to the Security Officer for approval.  To expedite the process, please give these approvers notice to expect an email from SAM in their mailbox requesting a decision.</p>
+
+<p>GSA cannot approve your request until the other two approvals have been completed. Once GSA has rendered final approval, you will receive an email stating that the role has been granted.</p>
+
+<p><a href="SAM-POCs.html">On System Account POCs</a></p>
+
+<p>Comments? Questions?  <a href="https://github.com/GSA/openIAE/issues">Talk to us</a>.</p>
+
+<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><div class="usa-grid">
+  <div class="usa-width-one-half">
+      <p><a href="http://www.gsa.gov/developer">GSA.gov/developer</a></p>
+  <p><a href="http://github.com/gsa">github.com/gsa</a></p>
+  </div>
+  <div class="usa-width-one-half usa-end-row">
+    <p>As a work of the United States government, this project is <a href="/blob/18f-pages/LICENSE.md">in the public domain</a>.</p>
+  </div>
+</div><span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1">   <script src="/sam_api/assets/js/vendor/jquery-1.11.3.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="/sam_api/assets/js/vendor/selectivizr-min.js"></script>
+    <script src="/sam_api/assets/js/vendor/respond.js"></script>
+    <script src="/sam_api/assets/js/vendor/rem.min.js"></script>
+  <![endif]-->
+  <script src="/sam_api/assets-styleguide/js/vendor/prism.js"></script>
+  <script src="/sam_api/assets-styleguide/js/styleguide.js"></script><span class="Apple-converted-space"> </span></span></p>
+</body>
+</html>
