@@ -9,6 +9,10 @@ For the following the SAM Web Standards do not modify the US Web Standards:
 * [tables](https://playbook.cio.gov/designstandards/tables/),
 * [alerts](https://playbook.cio.gov/designstandards/alerts/),
 accordions (https://playbook.cio.gov/designstandards/accordions/),
+<<<<<<< HEAD
+=======
+* [form controls](https://playbook.cio.gov/designstandards/form-controls/),
+>>>>>>> origin/gh-pages
 * [colors](https://playbook.cio.gov/designstandards/visual-style/#colors),
 * [search bar](https://playbook.cio.gov/designstandards/search-bar/), and 
 * [side navigation](https://playbook.cio.gov/designstandards/sidenav/).
@@ -32,9 +36,12 @@ The Internet, as a platform, has come a very long way in a very short time, rela
 Gratuitous animations that do not contribute to user feedback and goals become annoying, causing a speed bump. Animated graphics (or static imagery) that does not aid the communication of the content are distracting and make it difficult to navigate the site. The Web, generally speaking, is a silent world.  Sound (even as part of a video) should be optional. 
 
 For each page you should ask yourself, "What is the primary purpose of this page? What is the secondary purpose? What are the tertiary purposes? What is here that gets in the way of those purposes?"
+<<<<<<< HEAD
 
 ## Form Controls and Standards
 This section is written as an addition to the US Web Standards [form controls](https://playbook.cio.gov/designstandards/form-controls/) section. Therefore, please start there before to gain a basic understanding before continuing here.
 
 ### Selection
 To accommodate multiple types of device input, it is recommended that you minimize the amount of typing inputs placed within forms. Therefore, maximize the use of multiple choice of standard responses. T
+=======
+>>>>>>> origin/gh-pages

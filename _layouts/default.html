@@ -1,47 +1,30 @@
----
----
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <title>openIAE - GSA</title>
-  <link rel="stylesheet" href="http://gsa.github.io/openIAE/static/css/normalize.css">
-  <link rel="stylesheet" href="http://gsa.github.io/openIAE/static/css/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--[if lt IE 9]>
-  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-
-  <!--[if IE]>
-  <link rel="stylesheet" href="../static/css/for-ie-only.css">
-  <![endif]-->
+  {% include head.html %}
 </head>
 <body>
-  <header class="header cf" role="banner">
-      {% include header.html %}
-  </header>
 
-  <div class="wrap">
-    <div class="content">
+   {% include header.html %}
 
-    <aside>
-    {% include nav.html %}
+    <aside class="sidenav">
+      {% include nav.html %}
     </aside>
 
-    <section class="main-content" role="main">
-      {{ content }}
-    </section>
-
-    </div>
-  </div> <!--wrap-->
-
-    <footer class="footer cf" role="contentinfo">
-      <div class="wrap">
-        {% include footer.html %}
+    <div class="main-content" id="main-content">
+      <div class="styleguide-content usa-content">
+        {{ content }}
       </div>
+    
+    <footer class="usa-styleguide-footer">
+        {% include footer.html %}
     </footer>
-  <script src="../static/js/docs.min.js"></script>
-  <script type="text/javascript" src="../static/js/expandables.js"></script>
+    </div>
+
+    {% include analytics.html %}
+    {% include scripts.html %}
+    
+    <script src="{{ site.baseurl }}/assets/js/components.js"></script>
+
 </body>
 </html>
