@@ -1,3 +1,8 @@
+---
+title: SAM Web Standards - Visual Style
+layout: sam_web_standards
+---
+
 # Visual Style
 ## Use US Web Standards For…
 For the following the SAM Web Standards do not modify the US Web Standards:
@@ -11,7 +16,7 @@ For the following the SAM Web Standards do not modify the US Web Standards:
 accordions (https://playbook.cio.gov/designstandards/accordions/),
 * [form controls](https://playbook.cio.gov/designstandards/form-controls/),
 * [colors](https://playbook.cio.gov/designstandards/visual-style/#colors),
-* [search bar](https://playbook.cio.gov/designstandards/search-bar/), and 
+* [search bar](https://playbook.cio.gov/designstandards/search-bar/), and
 * [side navigation](https://playbook.cio.gov/designstandards/sidenav/).
 
 ## Logo & Usage (need approval for public posting)
@@ -28,8 +33,8 @@ You have the ability to surf the Internet on multiple devices, with multiple res
 [text and examples of image types and usage]
 
 ## Animation
-The Internet, as a platform, has come a very long way in a very short time, relatively speaking. The modern Web holds few boundaries when it comes to what can be accomplished; however, just because something can be done, does not mean it should be done. 
+The Internet, as a platform, has come a very long way in a very short time, relatively speaking. The modern Web holds few boundaries when it comes to what can be accomplished; however, just because something can be done, does not mean it should be done.
 
-Gratuitous animations that do not contribute to user feedback and goals become annoying, causing a speed bump. Animated graphics (or static imagery) that does not aid the communication of the content are distracting and make it difficult to navigate the site. The Web, generally speaking, is a silent world.  Sound (even as part of a video) should be optional. 
+Gratuitous animations that do not contribute to user feedback and goals become annoying, causing a speed bump. Animated graphics (or static imagery) that does not aid the communication of the content are distracting and make it difficult to navigate the site. The Web, generally speaking, is a silent world.  Sound (even as part of a video) should be optional.
 
 For each page you should ask yourself, "What is the primary purpose of this page? What is the secondary purpose? What are the tertiary purposes? What is here that gets in the way of those purposes?"

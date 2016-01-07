@@ -1,4 +1,10 @@
+---
+title: SAM Web Standards - Components
+layout: sam_web_standards
+---
+
 # Components
+
 ## Header
 The header consists of the branded home button, main navigation, and application navigation elements (only when within an application). The branded home button consists of the transition.SAM.gov logo with a link to https://transition.AM.gov/ allowing users to go to https://transition.SAM.gov from anywhere within the site.
 
@@ -59,7 +65,7 @@ Confirming is asking the user to verify that they truly want to proceed with an 
 ### Acknowledgement (following action)
 Acknowledging is displaying text to let the user know that the action they just invoked has been completed. This removes uncertainty about implicit operations that the system is taking. In some cases, the acknowledgment is presented along with an option to undo the action.
 
-[representation of Acknowledging] 
+[representation of Acknowledging]
 
 ## Icons
 The application of standard icons follows the guidance of [Font Awesome](https://fortawesome.github.io/Font-Awesome/icons/) for common icons.
