@@ -110,7 +110,7 @@
 <span class="Apple-converted-space"> </span></span></p>
 <p class="p1"><span class="s1"><h3 id="using-the-sam-api">Using the SAM API</h3>
 
-<p>The SAM API is a GET API which has one operation. The operation will retrieve an entity’s public information. Its endpoint is <code>https://api.data.gov/sam/v1/registrations/</code>. </p>
+<p>The SAM API is a GET API which has one operation. The operation will retrieve an entity’s public information. Its endpoint is <code>https://api.data.gov/sam/v1/registrations/</code>.</p>
 
 <p>A couple basic notes: the rate limits for the API are currently 5,000 calls/day and 5 calls per 5 seconds. As we go forward and understand the impact of usage of the API on SAM, we will adjust the limits accordingly as well as allow for individual users with specific needs to have customized rate limits appropriate to their use.</p>
 
@@ -121,9 +121,9 @@
 <p><a href="https://api.data.gov/sam/v1/registrations/1459697830000?api_key=YOUR_API_KEY">https://api.data.gov/sam/v1/registrations/1459697830000?api_key=YOUR_API_KEY</a></p>
 
 <h5 id="retrieving-entity-information">Retrieving entity information</h5>
-<p>The endpoint for getting all data begins with <code>/v1/registrations</code>. </p>
+<p>The endpoint for getting all data begins with <code>/v1/registrations</code>.</p>
 
-<p>The endpoint takes a single URL parameter which is the DUNS and DUNS+4 information concatenated. If the entity does not have a DUNS+4, the user should include <code>0000</code>. </p>
+<p>The endpoint takes a single URL parameter which is the DUNS and DUNS+4 information concatenated. If the entity does not have a DUNS+4, the user should include <code>0000</code>.</p>
 
 <p>For example, if an entity of interest has a DUNS number of <code>012345678</code> with no DUNS+4, the access to the endpoint would be at <code>/sam/v1/registrations/0123456780000</code>. An entity with the same DUNS but with a DUNS+4 of <code>9999</code> would be accessed at <code>/sam/v1/registrations/0123456789999</code>.</p>
 

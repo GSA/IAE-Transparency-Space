@@ -109,7 +109,7 @@
         <p><em>NOTE: All the documentation on this page refers to a future release of the API</em></p>
 
 <p>As part of the next SAM quarterly release, the SAM API service will expand to include the functionality for Search.  The SAM Search API has been developed to mimic the Search functionality that is currently available from the SAM website.<br />
-The Search API provides the opportunity to perform a search transaction in the following two options. Quick Search takes a single search term provided by the user and compares it to a set of predefined database fields.  Advanced Search allows the user to search by entering a value that is then used to search a user selected predefined search category. </p>
+The Search API provides the opportunity to perform a search transaction in the following two options. Quick Search takes a single search term provided by the user and compares it to a set of predefined database fields.  Advanced Search allows the user to search by entering a value that is then used to search a user selected predefined search category.</p>
 
 <p>Notice that we are implementing this through a JSON-based “hypermedia as the engine of application state” (HATEOAS) implementation with the appropriate <code>links</code> object within the result set. The intent going forward will be use this model to allow for a scalable architecture of IAE’s APIs to be built. The biggest implication of this for the user of the API is: don’t try to construct links yourself based on the patterns you see in the <code>links</code> object. Assume that those patterns could change. We will account for this requirement as we implement our rate-limiting for the API.</p>
 
@@ -125,7 +125,7 @@ The Search API provides the opportunity to perform a search transaction in the f
 
 <p><a href="https://api.data.gov/sam/v1/registrations?qterms=&quot;My%20Company&quot;">https://api.data.gov/sam/v1/registrations?qterms=”My%20Company”</a></p>
 
-<p>The Search API will then query the SAM database and display any registrant that matches the user selected search term contained in any of the following fields: </p>
+<p>The Search API will then query the SAM database and display any registrant that matches the user selected search term contained in any of the following fields:</p>
 
 <table>
   <thead>
@@ -169,7 +169,7 @@ The Search API provides the opportunity to perform a search transaction in the f
 
 <p>The search terms will be in parentheses. You can AND and OR search terms together by putting the terms <code>AND</code> or <code>OR</code> between terms, separated by spaces. (Eventually, they will be separated by <code>+</code> signs because of some ambiguities in the syntax, but for the moment, use spaces.)</p>
 
-<p>For example a user can search for an entity that has a Legal Business Name that includes the term “incorporated” AND has selected the NAICS Code of 12345 for which they are considered to be a Small Business for.  </p>
+<p>For example a user can search for an entity that has a Legal Business Name that includes the term “incorporated” AND has selected the NAICS Code of 12345 for which they are considered to be a Small Business for.</p>
 
 <p><a href="https://api.data.gov/sam/v1/registrations?qterms=(legalBusinessName:incorporated) AND (naicsLimitedSB:12345)">https://api.data.gov/sam/v1/registrations?qterms=(legalBusinessName:incorporated) AND (naicsLimitedSB:12345)</a></p>
 
