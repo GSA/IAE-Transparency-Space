@@ -1,3 +1,8 @@
+---
+title: SAM Web Standards - Content Style
+layout: sam_web_standards
+---
+
 # Content Style
 ## Use 18F Content Guide for...
 For the following the *SAM Web Standards* follows the [*18F Content Guidance*](https://pages.18f.gov/content-guide/) when writing content for the web:
@@ -21,7 +26,7 @@ For the following the *SAM Web Standards* follows the [*18F Content Guidance*](h
 * [references](https://pages.18f.gov/content-guide/references/).
 
 ## Reading-Level
-The SAM Web Standards attempts to use a fifth grade reading level. 
+The SAM Web Standards attempts to use a fifth grade reading level.
 
 [link to site for determining reading level]
 
