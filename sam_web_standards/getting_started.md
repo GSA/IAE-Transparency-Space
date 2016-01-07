@@ -17,7 +17,7 @@ The SAM Web Standards are developed primarily for Front-End Developers; however,
 NOTE: If your question is not answered directly within the SAM Web Standards, refer to the aforementioned resources. If your question is not answered in the aforementioned resources, either use your professional judgment or contact the IAE User Experience Team.
 
 ## Users and Technology Layers
-The *SAM Web Standards* identifies the following user types (not to be confused with personae established for transition.SAM.gov):
+The *SAM Web Standards* identifies the following user types (not to be confused with personae established for transition.SAM.gov):d
  * Front-end user: An individual using the Website
  * Front-end developer: A developer who is responsible for creating code to display the front-end to front-end users
  * Middleware developer: A developer who is responsible for creating code that acts as a bridge between the front-end presentation and back-end data layers
