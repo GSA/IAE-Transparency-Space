@@ -39,10 +39,7 @@ The *SAM Web Standards* identifies the following technology layers to describe t
 
 Each user type can be modified to distinguish between system personnel. Further, each type can be directly associated with a technology layer. Finally, it is important to note that the fidelity and validity of each layer are dependent on the preceding layer.  EXAMPLE: if the data layer does not house the proper information in the proper format, the middleware layer loses fidelity and validity, and so on.
 
-## Front-End User
-This section is written from the perspective of a front-end user, i.e., someone wanting to view and interact with the content of the site.
-
-### Secure by default, human-friendly, and no www
+## Secure by default, human-friendly, and no www
 There are two transfer protocols used to serve me Web content: Hypertext Transfer Protocol (HTTP) and HTTP Secure (HTTPS). By default all uniform resource locators (URLs) should use HTTPS; if possible, a non-HTTPS version should not be allowed.
 
 URLs represent complete addresses for content and should be human-friendly. Two examples are below:
@@ -61,14 +58,21 @@ URLs should be case-*insensitive*; therefore, the following URL pairs should res
 
 This allows communication collateral to be built in a more human-readable manner by using upper- and lower-case letters to separate words within URLs while simultaneously allowing direct copy and paste of the URL into a browser.
 
-### Information Architecture (navigation)
+## Information Architecture
+There are two primary ways for a front-end user to find information. The first is through links from one page to another. The second is by searching for content and following links within those results. 
+
+When a front-end user is looking for high-level or general information, the front-end user should be able to navigate the site quickly via static menus. The front-end user may not know exactly where to go or what (s)he is looking for; the architecture can help guide the front-end user by starting broad (categories) and becoming more detailed (a specific notice, wage determination, program, and so on).
+
+When a front-end user knows the information (s)he is looking for, search becomes the better; therefore, front-end users should be allowed to search using text with additional filtering capabilities within a given category.
+
+### Navigation
 Information Architecture, in terms of navigation, refers to the layout and depth of pages within a website. The *SAM Web Standards* recognizes four levels of navigation for page-related content.
 
-1. Level 0: This level of navigation is contained with the header and footer components and is used to navigate between system-wide pages (the Legal page, for example) and between categories within the system (Wages, for example). From a front-end user perspective, this results in a change from transition.SAM.gov to something like transition.SAM.gov/wages.
-2. Level 1: This level of navigation is appended to the header area and provides navigation within a category; thereby, allowing each category to have primary pages (Due to Be Revised within Wages, for example). Resulting in something like transition.SAM.gov/wages/to-be-revised.
-3. Levels 2 through 4: These levels of navigation utilize the sidebar element provided by the *US Web Standards*. Further, these levels of navigation should be avoided, if possible (or practical); thereby, reducing the amount of navigation and “drilling down” I need to perform as a front-end user to get to the content I am interested in.
+1. Main Navigation: Contained within the header and footer components and is used to navigate between system-wide pages (the Legal page, for example) and between categories within the system (Wages, for example). From a front-end user perspective, this results in a change from transition.SAM.gov to something like transition.SAM.gov/wages.
+2. Category Navigation: Appended to the header area and provides navigation within a category; thereby, allowing each category to have primary pages (“Due to Be Revised” within Wages, for example). Resulting in something like transition.SAM.gov/wages/to-be-revised.
+3. Sidebar Navigation (up to three levels): Navigation appearing in a vertical sidebar along the left side of pages using the element from the *US Web Standards*. This type of navigation should be avoided, if possible or practical. Further, if possible, only one level of navigation will make it easier to navigate.
 
-### Information Architecture (content)
+### Content
 Information Architecture, in terms of content, refers to how content is displayed. This could be the ordering of information within a block of content (chapters within a book, paragraphs within a chapter, sentences within a paragraph, and so on) or how blocks of content are arranged within a page (books in a library).
 
 For the purposes of the *SAM Web Standards* we recognize two primary types of content from a front-end user perspective: content and metadata. Content refers to titles of pages, body copy, attachments, and so on. Metadata refers to details related to *that* content; posting date, related category, and so on.
@@ -81,13 +85,6 @@ For content pages (as opposed to those designed as portals or navigation purpose
 On any given page, I should be to print (or print to file) the content of that page and receive a well-formed (readable) document, without chrome elements. Print stylesheets can be used to facilitate this outcome by hiding the navigation elements, sidebars, footers (except copyright information if applicable), and so on. Further, the size of the printed page is usually unknown; therefore, it is important to remove (or override) any fixed width information and replace it with a percentage (usually 100%).
 
 Note: Printing a page should only include content considered public unless you add proper document handling, marking and labeling in accordance with Federal regulations.
-
-### Navigation, search, and information architecture
-There are two major ways for me to find the content I am looking for. The first is through following links from one page to the next. The second is by searching for content and following links in those results. 
-
-When I am looking for high-level or general information, I should be able to navigate the site quickly through the use of static menus. If I am using the navigation, I may not know exactly where I am going, and the architecture of the site can help guide me to where I want to be—getting increasingly detailed the further I go.
-
-When I am looking for a specific piece of information, I want more control. When I search, I want the ability either to filter the results by service or to bring up an advanced search for a specific service.
 
 ## Front-End Developer
 ### Connection and Processor Speeds
