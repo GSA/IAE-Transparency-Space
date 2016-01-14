@@ -1,3 +1,6 @@
+---
+layout: sam_web_standards
+---
 # SAM Web Standards v1.2
 
 * [Getting Started](http://gsaiae.confluence.micropaas.io:8090/pages/viewpage.action?title=SAM+Web+Standards&spaceKey=UX#SAMWebStandards-gettingstarted)
@@ -34,7 +37,8 @@ The *SAM Web Standards* are developed primarily for Front-End Developers; howev
   * The U.S. Digital Services Playbook (<https://playbook.cio.gov>),
   * Usability Starter Kit (<http://www.digitalgov.gov/resources/digitalgov-user-experience-program/digitalgov-user-experience-program-usability-starter-kit/>),
   * *GSA Government-wide Section 508 Accessibility Program* (<http://www.section508.gov>), and
-  * The Research-Based Web Design & Usability Guidelines, Enlarged/Expanded edition (<http://guidelines.usability.gov>).* **Writing and language:**
+  * The Research-Based Web Design & Usability Guidelines, Enlarged/Expanded edition (<http://guidelines.usability.gov>).
+* **Writing and language:**
   * *The Chicago Manual of Style* (<http://www.chicagomanualofstyle.org/home.html>),
   * *The U.S. Government Printing Office Style Manual* (<http://www.gpo.gov/fdsys/pkg/GPO-STYLEMANUAL-2008/content-detail.html>),
   * *The Federal Plain Language Guide* (<http://www.plainlanguage.gov/howto/guidelines/FederalPLGuidelines/FederalPLGuidelines.pdf>), and
@@ -219,7 +223,9 @@ The *SAM Web Standards* uses the "big footer" defined by the *US Web Design Stan
 
 # Pagination
 
-The pagination element is used in circumstances where the content being displayed within a site area that cannot be fit on one page (search results, for example). If JavaScript is enabled, continuous scrolling methods can be used in place of the pagination element; however, this element should exist in case JavaScript is disabled.![Pagination](http://gsaiae.confluence.micropaas.io:8090/download/thumbnails/6722902/UI%20Component%20-%20Simple%20-%20Pagination.png?version=1&modificationDate=1440526726366&api=v2)
+The pagination element is used in circumstances where the content being displayed within a site area that cannot be fit on one page (search results, for example). If JavaScript is enabled, continuous scrolling methods can be used in place of the pagination element; however, this element should exist in case JavaScript is disabled.
+
+![Pagination](http://gsaiae.confluence.micropaas.io:8090/download/thumbnails/6722902/UI%20Component%20-%20Simple%20-%20Pagination.png?version=1&modificationDate=1440526726366&api=v2)
 \\[pagination]
 
 ## Widgets
