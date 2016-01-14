@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+
+  <title>GSA IAE | </title>
+  <meta property="og:title" content="GSA IAE | " />
+
+
+
+  <meta name="description" content="">
+  <meta property="og:description" content="" />
+
+
+  <link rel="canonical" href="/search/" />
+
+<!--[if lt IE 9]>
+  <script src="/openIAE/assets/js/vendor/html5shiv.js"></script>
+<![endif]-->
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/ico" href="/openIAE/assets/img/favicons/favicon.ico" />
+  <link rel="icon" type="image/png" href="/openIAE/assets/img/favicons/favicon.png" />
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/openIAE/assets/img/favicons/favicon-192.png" />
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <link rel="apple-touch-icon-precomposed" href="/openIAE/assets/img/favicons/favicon-57.png">
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/openIAE/assets/img/favicons/favicon-72.png">
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/openIAE/assets/img/favicons/favicon-114.png">
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/openIAE/assets/img/favicons/favicon-144.png">
+
+<!-- CSS
+================================================== -->
+  <link rel="stylesheet" href="/openIAE/assets/css/google-fonts.css">
+  <link rel="stylesheet" href="/openIAE/assets-styleguide/css/prism.css">
+  <link rel="stylesheet" href="/openIAE/assets/css/styleguide.css">
+
+</head>
+<body>
+
+   <a class="skipnav" href="#main-content">Skip to main content</a>
+
+<header class="usa-site-header" role="banner">
+
+  <div class="usa-disclaimer">
+    <span class="usa-disclaimer-official">
+      <img class="usa-flag_icon" alt="US flag signifying that this is a United States Federal Government website" src="/openIAE/assets/img/us_flag_small.png">
+      An official website of the United States Government
+    </span>
+    <span class="usa-disclaimer-stage">This site is currently in alpha. <a href="https://18f.gsa.gov/dashboard/stages/#alpha">Learn more.</a></span>
+  </div>
+  
+  <nav class="usa-site-navbar">
+      <a class="menu-btn" href="#">Menu</a>
+      <div class="logo" id="logo">
+        <h1>
+          <a href="/openIAE/" accesskey="1" title="Home" aria-label="Home">
+          openIAE</a>
+        </h1>
+      </div>
+      <div style="float:right;">
+        <img src="/openIAE/assets-styleguide/img/logo-gsa.png" />
+        <img src="/openIAE/assets-styleguide/img/logo-star.png" />
+      </div>
+    </nav>
+
+</header>
+
+
+    <aside class="sidenav">
+      
+  <nav>
+    <ul class="usa-sidenav-list">
+          <li><a href="/openIAE/about/" class="basics">About IAE</a></li>
+          <li><a href="/openIAE/IAEhelps/" class="fields">Using this Site</a></li>
+          <li><a href="/openIAE/repos/" class="repos">Repositories</a></li>
+          <li><a href="/openIAE/human_interface_guide/" class="hig">Human Interface Guide</a></li>
+          <li><a href="/openIAE/developer_resources/" class="developer_resources">Developer Resources</a></li>
+          <li><a href="/openIAE/sam_web_standards/" class="sam_web_standards">SAM Web Standards</a>
+          	<ul>
+          		<li><a href="/openIAE/sam_web_standards/visual_stytle/" class="sam_web_standards">Visual Style</a></li>
+          		<li><a href="/openIAE/sam_web_standards/visual_stytle/" class="sam_web_standards">SAM Web Standards</a></li>
+          		<li><a href="/openIAE/sam_web_standards/content_style/" class="sam_web_standards">SAM Web Standards</a></li>
+          		<li><a href="/openIAE/sam_web_standards/components/" class="sam_web_standards">SAM Web Standards</a></li>
+          	</ul>
+          </li>
+          <li><a href="/openIAE/communicate/"class="communicate">IAE Systems and Contacts</a></li>
+          <li><a href="/openIAE/IAE-next-steps/"class="communicate">What's New And Next for openIAE?</a></li>
+    </ul>
+  </nav>
+
+    </aside>
+
+    <div class="main-content" id="main-content">
+      <div class="styleguide-content usa-content">
+        <p><em>NOTE: All the documentation on this page refers to a future release of the API</em></p>
+
+<p>As part of the next SAM quarterly release, the SAM API service will expand to include the functionality for Search.  The SAM Search API has been developed to mimic the Search functionality that is currently available from the SAM website.<br />
+The Search API provides the opportunity to perform a search transaction in the following two options. Quick Search takes a single search term provided by the user and compares it to a set of predefined database fields.  Advanced Search allows the user to search by entering a value that is then used to search a user selected predefined search category.</p>
+
+<p>Notice that we are implementing this through a JSON-based “hypermedia as the engine of application state” (HATEOAS) implementation with the appropriate <code>links</code> object within the result set. The intent going forward will be use this model to allow for a scalable architecture of IAE’s APIs to be built. The biggest implication of this for the user of the API is: don’t try to construct links yourself based on the patterns you see in the <code>links</code> object. Assume that those patterns could change. We will account for this requirement as we implement our rate-limiting for the API.</p>
+
+<h3 id="searching-sam-using-the-api">Searching SAM using the API</h3>
+
+<h4 id="quick-search">Quick Search:</h4>
+
+<p>The Quick Search functionality allows a user to enter a single term which is then queried against eight fields in the SAM database.  The results should return the same businesses, grantees, and other registrants in SAM that are found when you do a “Quick Search” on SAM itself.</p>
+
+<p>Example: <a href="https://api.data.gov/sam/v1/registrations?qterms=GSA">https://api.data.gov/sam/v1/registrations?qterms=GSA</a></p>
+
+<p>You can include spaces by putting them in double-quotes and URL-encoding them like so:</p>
+
+<p><a href="https://api.data.gov/sam/v1/registrations?qterms=&quot;My%20Company&quot;">https://api.data.gov/sam/v1/registrations?qterms=”My%20Company”</a></p>
+
+<p>The Search API will then query the SAM database and display any registrant that matches the user selected search term contained in any of the following fields:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Legal Business Name</td>
+    </tr>
+    <tr>
+      <td>Doing-Business-As Name</td>
+    </tr>
+    <tr>
+      <td>DUNS</td>
+    </tr>
+    <tr>
+      <td>DUNS+4</td>
+    </tr>
+    <tr>
+      <td>CAGE Code</td>
+    </tr>
+    <tr>
+      <td>DoDAAC</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Note that the search will add a wildcard to the end of any passed in quick search term. So <code>qterms=Rob</code> will match “Robot Co., Inc.”</p>
+
+<h4 id="advanced-search">Advanced Search</h4>
+
+<p>The Advanced Search functionality allows a user to enter criteria or a value and a category which is then used to query the database to return all registrations that match that selection criteria.  In Advanced Search users are able to string multiple criteria and categories to better refine their search and return a more specific list of registration.</p>
+
+<p>Advanced Search uses the same <code>qterms</code> construct that we used for quick search, but follows more closely to the <a href="http://lucene.apache.org/core/2_9_4/queryparsersyntax.html">Lucene-based syntax</a> for querying by specific terms. It’s not exactly the same, but should be familiar for anyone who’s used to that syntax.</p>
+
+<p>As a basic example, if you want to make sure you’re searching only legal name, you can run the following search:</p>
+
+<p><a href="https://api.data.gov/sam/v1/registrations?qterms=(legalBusinessName:incorporated)">https://api.data.gov/sam/v1/registrations?qterms=(legalBusinessName:incorporated)</a></p>
+
+<p>The search terms will be in parentheses. You can AND and OR search terms together by putting the terms <code>AND</code> or <code>OR</code> between terms, separated by spaces. (Eventually, they will be separated by <code>+</code> signs because of some ambiguities in the syntax, but for the moment, use spaces.)</p>
+
+<p>For example a user can search for an entity that has a Legal Business Name that includes the term “incorporated” AND has selected the NAICS Code of 12345 for which they are considered to be a Small Business for.</p>
+
+<p><a href="https://api.data.gov/sam/v1/registrations?qterms=(legalBusinessName:incorporated) AND (naicsLimitedSB:12345)">https://api.data.gov/sam/v1/registrations?qterms=(legalBusinessName:incorporated) AND (naicsLimitedSB:12345)</a></p>
+
+<h4 id="advanced-search-fields">Advanced search fields</h4>
+
+<p>The following are the fields you can search for using Advanced Search. Note that, where appropriate, we have used the same field name as the JSON output from the detailed results of the API. Some of them, like <code>minorityOwned</code> are interpreted appropriately.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Functional Field</th>
+      <th>URL Search Field</th>
+      <th>Possible Search Terms</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Legal Business Name</td>
+      <td>legalBusinessName</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Doing Business As Name</td>
+      <td>doingBusinessAs</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>CAGE code</td>
+      <td>cage</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>DUNS number</td>
+      <td>duns</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Physical Address City</td>
+      <td>samAddress.city</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Physical Address Country</td>
+      <td>samAddress.country</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>State</td>
+      <td>samAddress.stateOrProvince</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Zip Code</td>
+      <td>samAddress.zip</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Congressional District</td>
+      <td>congressionalDistrict</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>NAICS - Limited SB</td>
+      <td>naicsLimitedSB</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>NAICS - Any Size</td>
+      <td>naicsAnySize</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Minority Owned Business</td>
+      <td>minorityOwned</td>
+      <td>true or false</td>
+    </tr>
+    <tr>
+      <td>Women Owned Business</td>
+      <td>womenOwned</td>
+      <td>true or false</td>
+    </tr>
+    <tr>
+      <td>Veteran Owned Business</td>
+      <td>veteranOwned</td>
+      <td>true or false</td>
+    </tr>
+    <tr>
+      <td>Service Disabled Veteran Owned</td>
+      <td>serviceDisabledVeteranOwned</td>
+      <td>true or false</td>
+    </tr>
+    <tr>
+      <td>SBA Certified 8A Program</td>
+      <td>sba8AProgram</td>
+      <td>true or false</td>
+    </tr>
+    <tr>
+      <td>SBA Certified Hubzone Program</td>
+      <td>sbaHubzoneProgram</td>
+      <td>true or false</td>
+    </tr>
+    <tr>
+      <td>Ability 1 Certified</td>
+      <td>ability1</td>
+      <td>true or false</td>
+    </tr>
+    <tr>
+      <td>Purpose of Registration</td>
+      <td>purpose</td>
+      <td>See codes below</td>
+    </tr>
+    <tr>
+      <td>Registration Status</td>
+      <td>registrationStatus</td>
+      <td>See codes below</td>
+    </tr>
+    <tr>
+      <td>Disaster Response Contractor</td>
+      <td>disasterResponse</td>
+      <td>true or false</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="codes-for-purpose-of-registration">Codes for Purpose of registration</h5>
+
+<ul>
+<li>Z1 - Federal AssistanceAwards</li>     
+<li>Z2 - All Awards</li>
+<li>Z4 - AssistanceAwards &amp; IGT</li>
+<li>Z5 - All Awards &amp; IGT</li></ul>
+
+<h5 id="codes-for-registration-status">Codes for registration status</h5>
+
+<ul><li>A - Active</li>
+<li>W - Work in Progress</li>
+<li>S - Submitted</li>
+<li>I - Inactive</li></ul>
+
+      </div>
+    
+    <footer class="usa-styleguide-footer">
+        <div class="usa-grid">
+  <div class="usa-width-one-half">
+      <p><a href="http://www.gsa.gov/developer">GSA.gov/developer</a></p>
+  <p><a href="http://github.com/gsa">github.com/gsa</a></p>
+  </div>
+  <div class="usa-width-one-half usa-end-row">
+    <p>As a work of the United States government, this project is <a href="/blob/18f-pages/LICENSE.md">in the public domain</a>.</p>
+  </div>
+</div>
+    </footer>
+    </div>
+
+    
+      <script src="/openIAE/assets/js/vendor/jquery-1.11.3.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="/openIAE/assets/js/vendor/selectivizr-min.js"></script>
+    <script src="/openIAE/assets/js/vendor/respond.js"></script>
+    <script src="/openIAE/assets/js/vendor/rem.min.js"></script>
+  <![endif]-->
+  <script src="/openIAE/assets-styleguide/js/vendor/prism.js"></script>
+  <script src="/openIAE/assets-styleguide/js/styleguide.js"></script>
+    
+    <script src="/openIAE/assets/js/components.js"></script>
+
+</body>
+</html>

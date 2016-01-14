@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+
+  <title>GSA IAE | IAE Architecture</title>
+  <meta property="og:title" content="GSA IAE | IAE Architecture" />
+
+
+
+  <meta name="description" content="">
+  <meta property="og:description" content="" />
+
+
+  <link rel="canonical" href="/developer_resources/IAE_Architecture/" />
+
+<!--[if lt IE 9]>
+  <script src="/openIAE/assets/js/vendor/html5shiv.js"></script>
+<![endif]-->
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/ico" href="/openIAE/assets/img/favicons/favicon.ico" />
+  <link rel="icon" type="image/png" href="/openIAE/assets/img/favicons/favicon.png" />
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/openIAE/assets/img/favicons/favicon-192.png" />
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <link rel="apple-touch-icon-precomposed" href="/openIAE/assets/img/favicons/favicon-57.png">
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/openIAE/assets/img/favicons/favicon-72.png">
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/openIAE/assets/img/favicons/favicon-114.png">
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/openIAE/assets/img/favicons/favicon-144.png">
+
+<!-- CSS
+================================================== -->
+  <link rel="stylesheet" href="/openIAE/assets/css/google-fonts.css">
+  <link rel="stylesheet" href="/openIAE/assets-styleguide/css/prism.css">
+  <link rel="stylesheet" href="/openIAE/assets/css/styleguide.css">
+
+</head>
+<body>
+
+   <a class="skipnav" href="#main-content">Skip to main content</a>
+
+<header class="usa-site-header" role="banner">
+
+  <div class="usa-disclaimer">
+    <span class="usa-disclaimer-official">
+      <img class="usa-flag_icon" alt="US flag signifying that this is a United States Federal Government website" src="/openIAE/assets/img/us_flag_small.png">
+      An official website of the United States Government
+    </span>
+    <span class="usa-disclaimer-stage">This site is currently in alpha. <a href="https://18f.gsa.gov/dashboard/stages/#alpha">Learn more.</a></span>
+  </div>
+  
+  <nav class="usa-site-navbar">
+      <a class="menu-btn" href="#">Menu</a>
+      <div class="logo" id="logo">
+        <h1>
+          <a href="/openIAE/" accesskey="1" title="Home" aria-label="Home">
+          openIAE</a>
+        </h1>
+      </div>
+      <div style="float:right;">
+        <img src="/openIAE/assets-styleguide/img/logo-gsa.png" />
+        <img src="/openIAE/assets-styleguide/img/logo-star.png" />
+      </div>
+    </nav>
+
+</header>
+
+
+    <aside class="sidenav">
+         <nav>
+    <ul class="usa-sidenav-list">
+          <li><a href="/openIAE/developer_resources/About_SAM_data/" class="basics">About SAM Data</a></li>
+          <li><a href="/openIAE/developer_resources/Using_SAM_data_extracts/" class="basics">Using SAM Data Extracts</a></li>
+          <li><a href="https://gsa.github.io/sam_api/sam/" target="_blank" class="basics">Using the SAM API</a></li>
+          <li><a href="/openIAE/developer_resources/Using_SAM_web_services/" class="basics">Using SAM Web Services</a></li>
+         <!--<li><a href="SAM_kb.html" class="sam_kb">SAM Knowledge Base</a></li>-->
+	  <li><a href="/openIAE/developer_resources/Access_SAM_data/" class="access">Accessing SAM Data</a></li>
+	  <li><a href="/openIAE/developer_resources/FPDS_data_docs/" class="basics">FPDS Data Documentation</a></li>
+	  <li><a href="/openIAE/developer_resources/IAE_Architecture/" class="basics">About IAE Architecture</a></li>
+          <!--<li><a href="../blog/" class="blog">Blog</a></li>-->
+        </ul>
+    </nav>
+
+    </aside>
+
+    <div class="main-content" id="main-content">
+      <div class="styleguide-content usa-content">
+        <h3 id="about-the-iae-architecture">About the IAE Architecture</h3>
+
+<p>The Github GSA IAE Architecture repository contains all the architecture, design and code artifacts required to 
+understand the functional definition of IAE, the design and ultimate technical implementation. It includes everything required to build a production environment for IAE, 
+or smaller limited capability environments for the support of development, test or demo activities.
+The repository is split into two separate sections. The as-is contains materials related to the pre-transformation systems. 
+The to-be contains architecture, design and code for the new transformed environment.</p>
+
+<p>Visit the <a href="https://github.com/GSA/IAE-Architecture">Github IAE Architecture Repository</a></p>
+
+<p>Comments? Questions?  <a href="https://github.com/GSA/IAE-Transparency-Space/issues">Talk to us</a>.</p>
+
+      </div>
+
+    <footer class="usa-styleguide-footer">
+        <div class="usa-grid">
+  <div class="usa-width-one-half">
+      <p><a href="http://www.gsa.gov/developer">GSA.gov/developer</a></p>
+  <p><a href="http://github.com/gsa">github.com/gsa</a></p>
+  </div>
+  <div class="usa-width-one-half usa-end-row">
+    <p>As a work of the United States government, this project is <a href="/blob/18f-pages/LICENSE.md">in the public domain</a>.</p>
+  </div>
+</div>
+    </footer>
+    </div>
+
+    
+      <script src="/openIAE/assets/js/vendor/jquery-1.11.3.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="/openIAE/assets/js/vendor/selectivizr-min.js"></script>
+    <script src="/openIAE/assets/js/vendor/respond.js"></script>
+    <script src="/openIAE/assets/js/vendor/rem.min.js"></script>
+  <![endif]-->
+  <script src="/openIAE/assets-styleguide/js/vendor/prism.js"></script>
+  <script src="/openIAE/assets-styleguide/js/styleguide.js"></script>
+
+    <script src="/openIAE/assets/js/components.js"></script>
+
+</body>
+</html>

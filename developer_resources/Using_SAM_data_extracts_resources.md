@@ -1,7 +1,7 @@
 ---
 title: Using SAM Data Extracts - Resources
-layout: Developer Resources 
+layout: dev_resources
 ---
-### Using SAM Data Extract Resource Links 
+### Using SAM Data Extract Resource Links
 
 [some resource](http://github.com/gsa/)
