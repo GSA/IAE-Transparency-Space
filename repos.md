@@ -24,9 +24,9 @@ _Coming Soon_
  - IAE Common Services Architecture
  - IAE Common Services Platform Codebase
 
-####What would you like to see? <a href="https://github.com/GSA/openIAE/issues" target="_blank">Tell us.</a>
+#### What would you like to see? <a href="https://github.com/GSA/openIAE/issues" target="_blank">Tell us.</a>
 
-#####[Sign Up for a Github Account](https://github.com/)
+##### [Sign Up for a Github Account](https://github.com/)
 
 
 

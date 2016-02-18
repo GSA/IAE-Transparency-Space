@@ -1,6 +1,6 @@
 ---
 title: About SAM Data
-layout: dev_resources
+layout: default
 nav: main
 ---
 ### About SAM Data

@@ -1,7 +1,6 @@
 ---
-layout: dev_resources
+layout: default
 title: Home
-nav: dev_resources_index
 ---
 ###Developer Resources
 

@@ -1,6 +1,12 @@
-name: SAM API
+name: GSA Open IAE
 markdown: kramdown
-pygments: true
+highlighter: rouge
 safe: true
-baseurl: /sam_api/
+baseurl: /openIAE
 exclude: ['.ruby-version', 'node_modules', 'package.json', 'bower.json']
+
+permalink: pretty
+
+sass:
+  sass_dir: assets/_scss
+  style: :compressed
