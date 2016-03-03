@@ -15,4 +15,6 @@ The base page template consists of the [Header]({{site.baseurl}}/sam_web_standar
 
 Each Category within SAM has a main (or home) page. These pages, generally consist of a brief introductory text block with link to read an expanded version as well as the [Header]({{site.baseurl}}/sam_web_standards/components/#header), [Footer]({{site.baseurl}}/sam_web_standards/components/#footer), [Application/Category Search Form]({{site.baseurl}}/sam_web_standards/components/#form-templates), and sections for resources (or quick links) and related links.
 
+[Insert image from not yet created]
+
 *[SAM]: System for Award Management
