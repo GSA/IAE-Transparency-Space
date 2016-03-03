@@ -7,7 +7,7 @@ layout: sam_web_standards
 
 ## Use US Web Standards For…
 
-For the following the SAM Web Standards do not modify the US Web Standards:
+For the following the *SAM Web Standards* do not modify the *US Web Standards*:
 
 * [typography](https://playbook.cio.gov/designstandards/visual-style/#typography) (use the ____________ typeface pairing),
 * [grid](https://playbook.cio.gov/designstandards/grids/),
@@ -28,6 +28,7 @@ For the following the SAM Web Standards do not modify the US Web Standards:
 ## Imagery
 
 You have the ability to surf the Internet on multiple devices, with multiple resolutions (low, medium, high, extra high, and so on), and the ability to make the browser almost any size you want. It is disappointing when a site dictates how you should use it or when the graphics are fuzzy because they are not accounting for the resolution capabilities of my display.
+
  * Use Scalable Vector Graphics (SVG) when possible, especially flat artwork
  * Use Portable Network Graphics (PNG) for flat artwork, images with transparency, or photographs
  * Create and save images at 100 pixels per inch and two times the rendered dimensions; this does not apply to SVG
@@ -46,7 +47,7 @@ For each page you should ask yourself, "What is the primary purpose of this page
 
 ## Form Controls and Standards
 
-This section is written as an addition to the US Web Standards [form controls](https://playbook.cio.gov/designstandards/form-controls/) section. Therefore, please start there before continuing to gain a basic understanding before continuing here.
+This section is written as an addition to the *US Web Standards* [form controls](https://playbook.cio.gov/designstandards/form-controls/) section. Therefore, please start there before continuing to gain a basic understanding before continuing here.
 
 ### Selection
 
