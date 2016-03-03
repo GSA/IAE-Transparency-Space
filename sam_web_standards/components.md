@@ -35,7 +35,7 @@ The SAM Web Standards uses the "big footer" defined by the *US Web Design Standa
 
 ## Form Templates
 
-See the *US Web Design Standards* for form templates related to name, address, sign-in, and password reset ([https://playbook.cio.gov/designstandards/form-controls/](https://playbook.cio.gov/designstandards/form-controls/)).
+See the *US Web Design Standards* for form templates related to name, address, sign-in, and password reset [form controls](https://playbook.cio.gov/designstandards/form-controls/).
 
 ### Application/Category Search Forms
 
