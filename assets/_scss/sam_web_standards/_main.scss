@@ -1,0 +1,15 @@
+.footnotes {
+	border-top: 1px solid #000;
+	font-size: $base-font-size*0.9;
+
+	> ol > li {
+		margin: 0;
+		padding: 0;
+		line-height: $base-font-size/2;
+
+		> p {
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
