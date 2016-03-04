@@ -5,9 +5,7 @@ layout: sam_web_standards
 
 # Content Style
 
-## Use 18F Content Guide for...
-
-For the following the *SAM Web Standards* follows the [*18F Content Guidance*](https://pages.18f.gov/content-guide/) when writing content for the web:
+The *SAM Web Standards* follows the [*18F Content Guidance*](https://pages.18f.gov/content-guide/) when writing content for the web:
 
 * [active voice](https://pages.18f.gov/content-guide/active-voice/),
 * [acronyms and abbreviations](https://pages.18f.gov/content-guide/acronyms-and-abbreviations/),
@@ -34,7 +32,7 @@ The SAM Web Standards attempts to use a fifth grade reading level.
 
 [link to site for determining reading level]
 
-## “Words Not To Use”
+## Words Not To Use
 
 Guidance as to terminologies that will not be included. (Possibly customize/add onto the common words and phrases in 18F Content Guide)
 

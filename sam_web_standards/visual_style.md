@@ -5,11 +5,8 @@ layout: sam_web_standards
 
 # Visual Style
 
-## Use US Web Standards For…
-
 For the following the SAM Web Standards do not modify the US Web Standards:
 
-* [grid](https://playbook.cio.gov/designstandards/grids/),
 * [buttons](https://playbook.cio.gov/designstandards/buttons/),
 * [labels](https://playbook.cio.gov/designstandards/labels/),
 * [tables](https://playbook.cio.gov/designstandards/tables/),
@@ -18,6 +15,10 @@ For the following the SAM Web Standards do not modify the US Web Standards:
 * [colors](https://playbook.cio.gov/designstandards/visual-style/#colors),
 * [search bar](https://playbook.cio.gov/designstandards/search-bar/), and
 * [side navigation](https://playbook.cio.gov/designstandards/sidenav/).
+
+## Mobile First
+
+The *SAM Web Standards* adopts the [grid](https://playbook.cio.gov/designstandards/grids/) from the *US Web Standards* as the foundation for the creation of responsive designs [^ResponsiveDesign]. Further, the *SAM Web Standards* recommend designing with a mobile first mindset to better serve users who are consuming the data available through SAM.
 
 ## Logo and Usage
 
@@ -64,12 +65,6 @@ Gratuitous animations that do not contribute to user feedback and goals become a
 
 For each page you should ask yourself, "What is the primary purpose of this page? What is the secondary purpose? What are the tertiary purposes? What is here that gets in the way of those purposes?"
 
-## Form Controls and Standards
-
-This section is written as an addition to the US Web Standards [form controls](https://playbook.cio.gov/designstandards/form-controls/) section. Therefore, please start there before continuing to gain a basic understanding before continuing here.
-
-### Selection
-
-To accommodate multiple types of device input, it is recommended that you minimize the amount of typing inputs placed within forms. Therefore, maximize the use of multiple choice of standard responses.
+[^ResponsiveDesign]: [Responsive Web Design: Google](https://developers.google.com/webmasters/mobile-sites/mobile-seo/responsive-design)
 
 *[SAM]: System for Award Management

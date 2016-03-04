@@ -5,6 +5,12 @@ layout: sam_web_standards
 
 # Components
 
+## Form Controls
+
+The *SAM Web Standards* makes use of [form controls](https://playbook.cio.gov/designstandards/form-controls/) section, this section is meant as an addition to those standards.
+
+- **Mobile Consideration:** Data entry on a mobile (handheld, phone, and so on) device can be tedious; therefore, when designing and developing forms, minimize the use of text input fields and large text areas.
+
 ## Header
 
 The header consists of the branded home button, main navigation, and application navigation elements (only when within an application). The branded home button consists of the transition.SAM.gov logo with a link to https://transition.SAM.gov/ allowing users to go to https://transition.SAM.gov from anywhere within the site.
