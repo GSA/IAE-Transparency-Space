@@ -28,7 +28,7 @@ The *SAM Web Standards* follows the [*18F Content Guidance*](https://pages.18f.g
 
 ## Reading-Level
 
-The SAM Web Standards attempts to use a fifth grade reading level.
+The *SAM Web Standards* attempts to use a fifth grade reading level.
 
 [link to site for determining reading level]
 
