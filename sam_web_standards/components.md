@@ -5,23 +5,17 @@ layout: sam_web_standards
 
 # Components
 
-## Form Controls
-
-The *SAM Web Standards* makes use of [form controls](https://playbook.cio.gov/designstandards/form-controls/) section, this section is meant as an addition to those standards.
-
-- **Mobile Consideration:** Data entry on a mobile (handheld, phone, and so on) device can be tedious; therefore, when designing and developing forms, minimize the use of text input fields and large text areas.
-
 ## Header
 
 The header consists of the branded home button, main navigation, and application navigation elements (only when within an application). The branded home button consists of the transition.SAM.gov logo with a link to https://transition.SAM.gov/ allowing users to go to https://transition.SAM.gov from anywhere within the site.
 
 ### Unauthenticated
 
-![header with logo left side, sign on button on the right side and "Take me too..." button is below both]( {{site.baseurl}}/assets/img/components/unauthenticated_header.png "Unauthenticated Header"){: .iae-img }
+![header with logo left side, sign on button on the right side and "Take me too..." button is below both]( {{site.baseurl}}/sam_web_standards/images/components/unauthenticated_header.png "Unauthenticated Header"){: .iae-img }
 
 ### Authenticated
 
-![header with logo left side. On the right side is "Hello Jane Smith", alerts badge with 5 alerts, and a user icon for more user options. "Take me too..." button is below both]( {{site.baseurl}}/assets/img/components/authenticated_header.png "Authenticated Header"){: .iae-img }
+![header with logo left side. On the right side is "Hello Jane Smith", alerts badge with 5 alerts, and a user icon for more user options. "Take me too..." button is below both]( {{site.baseurl}}/sam_web_standards/images/components/authenticated_header.png "Authenticated Header"){: .iae-img }
 
 [Accordion with code sample]
 
@@ -37,11 +31,13 @@ The category navigation allows each service to create pages within the categoryâ
 
 The SAM Web Standards uses the "big footer" defined by the *US Web Design Standards* as a base.
 
-![]( {{site.baseurl}}/assets/img/components/footer.png "Footer"){: .iae-img }
+![]( {{site.baseurl}}/sam_web_standards/images/components/footer.png "Footer"){: .iae-img }
 
-## Form Templates
+## Form Controls
 
-See the *US Web Design Standards* for form templates related to name, address, sign-in, and password reset [form controls](https://playbook.cio.gov/designstandards/form-controls/).
+The *SAM Web Standards* makes use of [form controls](https://playbook.cio.gov/designstandards/form-controls/) section, this section is meant as an addition to those standards. See the *US Web Design Standards* for form templates related to name, address, sign-in, and password reset [form controls](https://playbook.cio.gov/designstandards/form-controls/).
+
+- **Mobile Consideration:** Data entry on a mobile (handheld, phone, and so on) device can be tedious; therefore, when designing and developing forms, minimize the use of text input fields and large text areas.
 
 ### Application/Category Search Forms
 

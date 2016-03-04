@@ -12,13 +12,12 @@ For the following the SAM Web Standards do not modify the US Web Standards:
 * [tables](https://playbook.cio.gov/designstandards/tables/),
 * [alerts](https://playbook.cio.gov/designstandards/alerts/),
 * [accordions](https://playbook.cio.gov/designstandards/accordions/),
-* [colors](https://playbook.cio.gov/designstandards/visual-style/#colors),
 * [search bar](https://playbook.cio.gov/designstandards/search-bar/), and
 * [side navigation](https://playbook.cio.gov/designstandards/sidenav/).
 
 ## Mobile First
 
-The *SAM Web Standards* adopts the [grid](https://playbook.cio.gov/designstandards/grids/) from the *US Web Standards* as the foundation for the creation of responsive designs [^ResponsiveDesign]. Further, the *SAM Web Standards* recommend designing with a mobile first mindset to better serve users who are consuming the data available through SAM.
+The *SAM Web Standards* adopts the [grid](https://playbook.cio.gov/designstandards/grids/) from the *US Web Standards* as the foundation for the creation of responsive designs [^ResponsiveDesign]. Further, the *SAM Web Standards* recommend designing with a mobile first mindset to better serve users who are consuming the data available through SAM on smaller screens.
 
 ## Logo and Usage
 
@@ -30,7 +29,7 @@ The *SAM Web Standards* follows the *US Web Standards* with regard to [typograph
 
 ## Colors
 
-The *SAM Web Standards* follows the *US Web Standards* [color palette](https://playbook.cio.gov/designstandards/visual-style/#palette) as a base for color decisions. Further, the *SAM Web Standards* defines the following colors as suitable content background colors.
+The *SAM Web Standards* uses the *US Web Standards* [colors](https://playbook.cio.gov/designstandards/visual-style/#colors) as a base for color decisions. Further, the *SAM Web Standards* defines the following colors as suitable content background colors.
 
 <div class="usa-grid-full usa-color-row usa-primary-color-section">
   <div class="usa-color-square usa-color-white">
@@ -46,6 +45,7 @@ The *SAM Web Standards* follows the *US Web Standards* [color palette](https://p
     </div>
   </div>  
 </div>
+
 ## Imagery
 
 You have the ability to surf the Internet on multiple devices, with multiple resolutions (low, medium, high, extra high, and so on), and the ability to make the browser almost any size you want. It is disappointing when a site dictates how you should use it or when the graphics are fuzzy because they are not accounting for the resolution capabilities of my display.

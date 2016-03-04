@@ -11,5 +11,6 @@ layout: sam_web_standards
 - Added [Terms]({{ site.baseurl }}/sam_web_standards/terms) page.
 - Moved Form Controls and Standards to [form controls]({{ site.baseurl }}/sam_web_standards/visual_style/#form-controls) section of the Components page.
 - Moved Display Sizes to [mobile first]({{ site.baseurl }}/sam_web_standards/visual_style/#mobile-first) section of the Visual Style page.
+- Renamed Form Templates to [Form Controls]({{ site.baseurl }}/sam_web_standards/visual_style/#form-controls) on the Components page.
 - Minor edits to [Content Style]({{ site.baseurl }}/sam_web_standards/content_style) page.
 - Created /assets/sam_web_standards/main.scss for formatting elements specific to the *SAM Web Standards*.

@@ -11,7 +11,7 @@ There are generally four major areas of code developed for the delivery of infor
 3. Cascading Style Sheets (CSS), which lets the browser know how to render HTML elements visually (color, size, and so on).
 4. A client-side language (usually JavaScript)
 
-The *SAM Web Standards* recommends and embraces the adoption of progressive enhancement [^ProgressiveEnhancement1] [^ProgressiveEnhancement2], whereby content (the data being consumed, tranferred, and created) is considered first through semantic and accessible HTML, the style and interactions then utilize CSS whenever possible, with JavaScript being added as necessary. There are many benefits to designing and developing this way, which go beyond the scope of the *SAM Web Standards*.
+The *SAM Web Standards* recommends and embraces the adoption of progressive enhancement [^ProgressiveEnhancement1]<sup>,</sup> [^ProgressiveEnhancement2], whereby content (the data being consumed, tranferred, and created) is considered first through semantic and accessible HTML, the style and interactions then utilize CSS whenever possible, with JavaScript being added as necessary. There are many benefits to designing and developing this way, which go beyond the scope of the *SAM Web Standards*.
 
 ## Bandwidth and Processor Speeds
 
