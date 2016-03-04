@@ -9,22 +9,42 @@ layout: sam_web_standards
 
 For the following the *SAM Web Standards* do not modify the *US Web Standards*:
 
-* [typography](https://playbook.cio.gov/designstandards/visual-style/#typography) (use the ____________ typeface pairing),
 * [grid](https://playbook.cio.gov/designstandards/grids/),
 * [buttons](https://playbook.cio.gov/designstandards/buttons/),
 * [labels](https://playbook.cio.gov/designstandards/labels/),
 * [tables](https://playbook.cio.gov/designstandards/tables/),
 * [alerts](https://playbook.cio.gov/designstandards/alerts/),
 * [accordions](https://playbook.cio.gov/designstandards/accordions/),
-* [form controls](https://playbook.cio.gov/designstandards/form-controls/),
 * [colors](https://playbook.cio.gov/designstandards/visual-style/#colors),
 * [search bar](https://playbook.cio.gov/designstandards/search-bar/), and
 * [side navigation](https://playbook.cio.gov/designstandards/sidenav/).
 
-## Logo & Usage (need approval for public posting)
+## Logo and Usage
 
 [insert logo pages from branding style guide]
 
+## Typography
+
+The *SAM Web Standards* follows the *US Web Standards* with regard to [typography](https://playbook.cio.gov/designstandards/visual-style/#typography) and uses the Source Sans Pro [pairing and style](https://playbook.cio.gov/designstandards/visual-style/#pairings).
+
+## Colors
+
+The *SAM Web Standards* follows the *US Web Standards* [color palette](https://playbook.cio.gov/designstandards/visual-style/#palette) as a base for color decisions. Further, the *SAM Web Standards* defines the following colors as suitable content background colors.
+
+<div class="usa-grid-full usa-color-row usa-primary-color-section">
+  <div class="usa-color-square usa-color-white">
+    <div class="usa-color-inner-content">
+      <p class="usa-color-hex">#ffffff</p>
+      <p class="usa-color-name">white</p>
+    </div>
+  </div>
+  <div class="usa-color-square usa-color-white">
+    <div class="usa-color-inner-content">
+      <p class="usa-color-hex">need light green background color</p>
+      <p class="usa-color-name">light green hex and iae-style</p>
+    </div>
+  </div>  
+</div>
 ## Imagery
 
 You have the ability to surf the Internet on multiple devices, with multiple resolutions (low, medium, high, extra high, and so on), and the ability to make the browser almost any size you want. It is disappointing when a site dictates how you should use it or when the graphics are fuzzy because they are not accounting for the resolution capabilities of my display.
@@ -52,3 +72,5 @@ This section is written as an addition to the *US Web Standards* [form controls]
 ### Selection
 
 To accommodate multiple types of device input, it is recommended that you minimize the amount of typing inputs placed within forms. Therefore, maximize the use of multiple choice of standard responses.
+
+*[SAM]: System for Award Management

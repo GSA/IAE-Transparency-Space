@@ -33,15 +33,9 @@ The SAM Web Standards uses the "big footer" defined by the *US Web Design Standa
 
 ![]( {{site.baseurl}}/assets/img/components/footer.png "Footer"){: .iae-img }
 
-## Page Templates
-
-### Default
-
-The default page template consists of the Header and Footer with a free-form content area between.
-
 ## Form Templates
 
-See the *US Web Design Standards* for form templates related to name, address, sign-in, and password reset ([https://playbook.cio.gov/designstandards/form-controls/](https://playbook.cio.gov/designstandards/form-controls/)).
+See the *US Web Design Standards* for form templates related to name, address, sign-in, and password reset [form controls](https://playbook.cio.gov/designstandards/form-controls/).
 
 ### Application/Category Search Forms
 
