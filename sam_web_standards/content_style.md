@@ -30,7 +30,7 @@ For the following the *SAM Web Standards* follows the [*18F Content Guidance*](h
 
 ## Reading-Level
 
-The SAM Web Standards attempts to use a fifth grade reading level.
+The *SAM Web Standards* attempts to use a fifth grade reading level.
 
 [link to site for determining reading level]
 

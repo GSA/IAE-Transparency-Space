@@ -37,6 +37,9 @@
   url: 'sam_web_standards'
   class: 'sam_web_standards'
   submenu: 
+    - text: 'Information Architecture'
+      url: 'information_architecture'
+      class: 'sam_web_standards'
     - text: 'Content Style'
       url: 'content_style'
       class: 'sam_web_standards'
