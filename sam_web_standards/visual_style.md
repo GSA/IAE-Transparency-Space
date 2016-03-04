@@ -53,6 +53,7 @@ The *SAM Web Standards* uses the *US Web Standards* [colors](https://playbook.ci
 ## Imagery
 
 You have the ability to surf the Internet on multiple devices, with multiple resolutions (low, medium, high, extra high, and so on), and the ability to make the browser almost any size you want. It is disappointing when a site dictates how you should use it or when the graphics are fuzzy because they are not accounting for the resolution capabilities of my display.
+
  * Use Scalable Vector Graphics (SVG) when possible, especially flat artwork
  * Use Portable Network Graphics (PNG) for flat artwork, images with transparency, or photographs
  * Create and save images at 100 pixels per inch and two times the rendered dimensions; this does not apply to SVG
