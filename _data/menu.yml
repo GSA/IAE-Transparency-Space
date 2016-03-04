@@ -80,6 +80,9 @@
       url: 'visual_style'
       class: 'sam_web_standards'
       submenu:
+      - text: 'Style Sheets'
+        url: '#cascading-style-sheets'
+        class: 'sam_web_standards'
       - text: 'Mobile First'
         url: '#mobile-first'
         class: 'sam_web_standards'
