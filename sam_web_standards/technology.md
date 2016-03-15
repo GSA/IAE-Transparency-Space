@@ -1,0 +1,61 @@
+---
+title: SAM Web Standards | Technology Considerations
+layout: sam_web_standards
+---
+# Technology Considerations
+
+There are generally four major areas of code developed for the delivery of information over the Internet:
+
+1. A server-side language.
+2. The Hypertext Markup Language (HTML) itself for the display of content.
+3. Cascading Style Sheets (CSS), which lets the browser know how to render HTML elements visually (color, size, and so on).
+4. A client-side language (usually JavaScript)
+
+The *SAM Web Standards* recommends and embraces the adoption of progressive enhancement [^ProgressiveEnhancement1]<sup>,</sup> [^ProgressiveEnhancement2], whereby content (the data being consumed, tranferred, and created) is considered first through semantic and accessible HTML, the style and interactions then utilize CSS whenever possible, with JavaScript being added as necessary. There are many benefits to designing and developing this way, which go beyond the scope of the *SAM Web Standards*.
+
+## Bandwidth and Processor Speeds
+
+The *SAM Web Standards* recommends a [mobile first]({{ site.baseurl }}/sam_web_standards/visual_style/#mobile-first) approach to design and development. As part of this recommendation it is important to consider bandwidth constraints, caps of data plans, and processor speeds. Therefore, it is recommended that the majority of processes be performed by the back-end while delivering the minimum data required to the front-end to update a user. Further, mobile and tablet devices typically have less processing power and hardware resources available, which should also be taken into consideration when creating client-side scripts.
+
+## Secure by Default
+
+There are two transfer protocols used to serve Web content: Hypertext Transfer Protocol (HTTP) and HTTP Secure (HTTPS). By default all uniform resource locators (URLs) should use HTTPS; an HTTP URL should redirect to the HTTPS version.
+
+
+## No WWW
+
+URLs should not require the use of “www”, as this represents a sub-domain and could lead to confusion if subdomains are implemented on the site. In other words, there is a question of whether the following are different sites or the same:
+
+* https://www.my.domainname.com
+* https://my.www.domainname.com
+* https://my.domainname.com
+
+## Human-Friendly and Readable
+
+URLs should be case-*insensitive*; therefore, the following URL pairs should result in the display of the same content:
+
+* https://My.DomainName.com and<br>https://my.domainname.com
+* https://my.DomainName.com/MainPage/SubPage and<br>https://my.domainname.com/mainpage/subpage
+* https://my.domainname.com/AFileOnTheServer.pdf and<br>https://my.domainname.com/afileontheserver.pdf
+
+This allows communication and marketing collateral to be built in a more human-readable manner by using upper- and lower-case letters to separate words within URLs while supporting copy and paste of the URL into a browser.
+
+Further, when developing page addresses and URLs a user should be able to gain a basic understanding of what they will see, for example:
+
+* https://domainname.com/mainpage/posts/descriptive-post-title
+* not https://domainname.com/?page=1&post=5
+
+[^AddressNames]: While there are some differences in the details of these terms, for the most part, they can be used interchangibly: URL, URI, Address, Path, Route, and others.
+[^ProgressiveEnhancement1]: [Understanding Progressive Enhancement: A List Apart](http://alistapart.com/article/understandingprogressiveenhancement)
+[^ProgressiveEnhancement2]: [Progressive Enhancement: Wikipedia](https://en.wikipedia.org/wiki/Progressive_enhancement)
+
+*[SAM]: System for Award Management
+*[IAE]: Integrated Award Environment
+*[API]: Application Program Interface
+*[APIs]: Application Program Interfaces
+*[HTTP]: Hypertext Transfer Protocol
+*[HTTPS]: Hypertext Transfer Protocol Secure
+*[URL]: Uniform Resource Locator
+*[URLs]: Uniform Resource Locators
+*[AJAX]: Asynchronous JavaScript and eXtensible Markup Language
+*[HTML]: Hypertext Markup Language

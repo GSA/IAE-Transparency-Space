@@ -18,17 +18,19 @@
                         {% else %}
                             <a href="{{ site.baseurl }}/{{item.url}}/{{subitem.url}}" class="{{subitem.class}} {% if current[2] == subitemlowercase %} usa-current{% endif %}" target="{% if subitem.target %}{{subitem.target}}{% else %}_self{% endif %}">{{subitem.text}}</a>
                         {% endif %}
+
                         {% if subitem.submenu %}
-                        	<ul class="usa-sidenav-sub_list {% if current[2] == subitemlowercase %} display-block{% endif %}">
-                        	    {% for subsubitem in subitem.submenu%}
-                        	    {% assign subsubitemlowercase = subsubitem.url | downcase %}
-                        	    <li>
-                        	        <a href="{{ site.baseurl }}/{{item.url}}/{{subitem.url}}/{{subsubitem.url}}" class="{{subsubitem.class}} {% if current[2] == subsubitemlowercase %} usa-current{% endif %}" target="{% if subsubitem.target %}{{subsubitem.target}}{% else %}_self{% endif %}">{{subsubitem.text}}</a>
+                            <ul class="usa-sidenav-sub_list {% if current[2] == subitemlowercase %} display-block{% endif %}">
+                                {% for subsubitem in subitem.submenu%}
+                                {% assign subsubitemlowercase = subsubitem.url | downcase %}
+                                <li>
+                                    <a href="{{ site.baseurl }}/{{item.url}}/{{subitem.url}}/{{subsubitem.url}}" class="{{subsubitem.class}} {% if current[2] == subsubitemlowercase %} usa-current{% endif %}" target="{% if subsubitem.target %}{{subsubitem.target}}{% else %}_self{% endif %}">{{subsubitem.text}}</a>
                         
-                        	    </li>
-                        	    {% endfor %}
-                        	</ul>
+                                </li>
+                                {% endfor %}
+                            </ul>
                         {% endif %}
+                        
                     </li>
                     {% endfor %}
                 </ul>
