@@ -25,7 +25,19 @@ The header consists of the branded home button, main navigation, and application
 
 The category navigation allows each service to create pages within the category’s area within transition.SAM.gov. For example, https://transition.SAM.gov/wages/resources would be a page consisting of links to resources related to Wage Determinations and available within the Category Navigation element when a user is anywhere within https://transition.SAM.gov/wages.
 
-[representation of navigation]
+Note: The Category Navigation component is a sub-component of the [Header]({{ site.baseurl }}/sam_web_standards/components/#header).
+
+#### Expanded
+
+[Visual representation - expanded]
+
+#### Collapsed
+
+[Visual representation - collapsed]
+
+[Accordion with code sample]
+
+[Accordion with technical description]
 
 ## Footer
 
