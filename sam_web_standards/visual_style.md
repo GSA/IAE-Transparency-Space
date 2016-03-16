@@ -42,10 +42,10 @@ The *SAM Web Standards* uses the *US Web Standards* [colors](https://playbook.ci
       <p class="usa-color-name">white</p>
     </div>
   </div>
-  <div class="usa-color-square" style="background-color: #f8f8f8;">
+  <div class="usa-color-square usa-color-white" style="background-color: #f8f8f8;">
     <div class="usa-color-inner-content">
       <p class="usa-color-hex">#f8f8f8</p>
-      <p class="usa-color-name">iae-style or name</p>
+      <p class="usa-color-name">.info-box.panel</p>
     </div>
   </div>  
 </div>
