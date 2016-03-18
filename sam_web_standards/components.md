@@ -47,9 +47,9 @@ The SAM Web Standards uses the "big footer" defined by the *US Web Design Standa
 
 ## Form Controls
 
-The *SAM Web Standards* makes use of [form controls](https://playbook.cio.gov/designstandards/form-controls/) section, this section is meant as an addition to those standards. See the *US Web Design Standards* for form templates related to name, address, sign-in, and password reset [form controls](https://playbook.cio.gov/designstandards/form-controls/).
+The *SAM Web Standards* makes use of the [form controls](https://playbook.cio.gov/designstandards/form-controls/) from the *US Web Standards*. See the *US Web Design Standards* for form templates related to name, address, sign-in, and password reset [form controls](https://playbook.cio.gov/designstandards/form-controls/).
 
-- **Mobile Consideration:** Data entry on a mobile (handheld, phone, and so on) device can be tedious; therefore, when designing and developing forms, minimize the use of text input fields and large text areas.
+**Mobile Consideration:** Data entry on a mobile (handheld, phone, and so on) device can be tedious; therefore, when designing and developing forms, minimize the use of text input fields and large text areas.
 
 ### Application/Category Search Forms
 
@@ -65,13 +65,13 @@ Used on pages where content spans multiple applications wherein a front-end user
 
 ## Search Result
 
-Used to display an individual results within a list of search results. Contains content information/summary and metadata related to the content. Metadata generally represent optional filters, which can be applied by the user, and are grouped together to easily discern between result content and metadata.
+Used to display an individual result within a list of search results. Contains content information/summary and metadata related to the content. Metadata generally represent optional filters, which can be applied by the user, and are grouped together to easily discern between result content and metadata.
 
 [Need image or live coded results, with technical description]
 
 ## Pagination
 
-The pagination element is used in circumstances where the content being displayed within a site area that cannot be fit on one page (search results, for example). If JavaScript is enabled, continuous scrolling methods can be used in place of the pagination element; however, this element should exist in case JavaScript is disabled.
+The pagination element is used in circumstances where the content being displayed cannot be accommodated in a single page (search results, for example). If JavaScript is enabled, continuous scrolling methods can be used in place of the pagination element; however, this element should exist in case JavaScript is disabled.
 
 [representation of pagination mechanism]
 

@@ -17,11 +17,11 @@ There are generally four major areas of code developed for the delivery of infor
 
 ## Bandwidth and Processor Speeds
 
-The *SAM Web Standards* recommends a [mobile first]({{ site.baseurl }}/sam_web_standards/visual_style/#mobile-first) approach to design and development. As part of this recommendation it is important to consider bandwidth constraints, caps of data plans, and processor speeds. Therefore, it is recommended that the majority of processes be performed by the back-end while delivering the minimum data required to the front-end to update a user. Further, mobile and tablet devices typically have less processing power and hardware resources available, which should also be taken into consideration when creating client-side scripts.
+The *SAM Web Standards* recommends a [mobile first]({{ site.baseurl }}/sam_web_standards/visual_style/#mobile-first) approach to design and development. As part of this recommendation it is important to consider bandwidth constraints, caps of data plans, and processor speeds. Therefore, it is recommended that the majority of processes be performed server-side while delivering the minimum data required to the client-side to update a user. Further, mobile and tablet devices typically have less processing power and hardware resources available, which should also be taken into consideration when creating client-side scripts.
 
 ## Secure by Default
 
-There are two transfer protocols used to serve Web content: Hypertext Transfer Protocol (HTTP) and HTTP Secure (HTTPS). By default all uniform resource locators (URLs) should use HTTPS; an HTTP URL should redirect to the HTTPS version.
+There are two transfer protocols used to serve Web content: Hypertext Transfer Protocol (HTTP) and HTTP Secure (HTTPS). By default all uniform resource locators (URLs) should use HTTPS; an HTTP URL should redirect to the HTTPS equivalent.
 
 
 ## No WWW
