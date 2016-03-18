@@ -4,6 +4,8 @@ layout: sam_web_standards
 ---
 # Technology Considerations
 
+The *SAM Web Standards* recommends and embraces the adoption of progressive enhancement, [^ProgressiveEnhancement1]<sup>,</sup> [^ProgressiveEnhancement2] whereby content (the data being consumed, tranferred, and created) is considered first through semantic and accessible HTML, the style and interactions then utilize CSS whenever possible, with JavaScript being added as necessary.[^Section508]<sup>,</sup>[^w3cProgressiveEnhancement]
+
 There are generally four major areas of code developed for the delivery of information over the Internet:
 
 1. A server-side language.
@@ -11,7 +13,7 @@ There are generally four major areas of code developed for the delivery of infor
 3. Cascading Style Sheets (CSS), which lets the browser know how to render HTML elements visually (color, size, and so on).
 4. A client-side language (usually JavaScript)
 
-The *SAM Web Standards* recommends and embraces the adoption of progressive enhancement [^ProgressiveEnhancement1]<sup>,</sup> [^ProgressiveEnhancement2], whereby content (the data being consumed, tranferred, and created) is considered first through semantic and accessible HTML, the style and interactions then utilize CSS whenever possible, with JavaScript being added as necessary. There are many benefits to designing and developing this way, which go beyond the scope of the *SAM Web Standards*.
+
 
 ## Bandwidth and Processor Speeds
 
@@ -45,6 +47,8 @@ Further, when developing page addresses and URLs a user should be able to gain a
 * https://domainname.com/mainpage/posts/descriptive-post-title
 * not https://domainname.com/?page=1&post=5
 
+[^Section508]: [Quick Reference Guide to Section 508 Requirements and Standards 1194.22 (l)](http://www.section508.gov/content/learn/standards/quick-reference-guide#1194.22l)
+[^w3cProgressiveEnhancement]: [World Wide Web Consortium - Graceful degradation versus progressive enhancement](https://www.w3.org/wiki/Graceful_degradation_versus_progressive_enhancement)
 [^AddressNames]: While there are some differences in the details of these terms, for the most part, they can be used interchangibly: URL, URI, Address, Path, Route, and others.
 [^ProgressiveEnhancement1]: [Understanding Progressive Enhancement: A List Apart](http://alistapart.com/article/understandingprogressiveenhancement)
 [^ProgressiveEnhancement2]: [Progressive Enhancement: Wikipedia](https://en.wikipedia.org/wiki/Progressive_enhancement)
