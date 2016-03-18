@@ -4,7 +4,7 @@ layout: sam_web_standards
 ---
 # Technology Considerations
 
-The *SAM Web Standards* recommends and embraces the adoption of progressive enhancement, [^ProgressiveEnhancement1]<sup>,</sup> [^ProgressiveEnhancement2] whereby content (the data being consumed, tranferred, and created) is considered first through semantic and accessible HTML, the style and interactions then utilize CSS whenever possible, with JavaScript being added as necessary.[^Section508]<sup>,</sup>[^w3cProgressiveEnhancement]
+The *SAM Web Standards* recommends and embraces the adoption of progressive enhancement, [^ProgressiveEnhancement1]<sup>,</sup> [^ProgressiveEnhancement2] whereby content (the data being consumed, transferred, and created) is considered first through semantic and accessible HTML, the style and interactions then utilize CSS whenever possible, with JavaScript being added as necessary.[^Section508]<sup>,</sup>[^w3cProgressiveEnhancement]
 
 There are generally four major areas of code developed for the delivery of information over the Internet:
 
@@ -13,7 +13,13 @@ There are generally four major areas of code developed for the delivery of infor
 3. Cascading Style Sheets (CSS), which lets the browser know how to render HTML elements visually (color, size, and so on).
 4. A client-side language (usually JavaScript)
 
+When a user requests a URI, the server-side language (or framework) performs the duties of querying databases and preparing HTML content for the client.
 
+HTML is the relatively static content interpreted by the browser for the display of content. Further, it plays the primary role in accessibility and assistive technologies; therefore, it should be well-formed (semantic) and as minimal as possible.
+
+Cascading Style Sheets (CSS) are responsible for defining the aesthetic characteristics of the rendered page. Further, they play a secondary role in accessibility and assistive technologies. Finally, most modern browsers allow CSS to be used instead of JavaScript for things such as animations and device handling.
+
+Client-side languages, which execute by the user’s device. Client-side scripts can degrade battery life on mobile devices, exceed the limits of processor capabilities resulting in longer load times, or be disabled by the user altogether, which creates a poor experience. Therefore, client-side script capabilities should be created only once the core functionality and experience are complete.
 
 ## Bandwidth and Processor Speeds
 
@@ -60,6 +66,7 @@ Further, when developing page addresses and URLs a user should be able to gain a
 *[HTTP]: Hypertext Transfer Protocol
 *[HTTPS]: Hypertext Transfer Protocol Secure
 *[URL]: Uniform Resource Locator
+*[URI]: Uniform Resource Indicator
 *[URLs]: Uniform Resource Locators
 *[AJAX]: Asynchronous JavaScript and eXtensible Markup Language
 *[HTML]: Hypertext Markup Language
