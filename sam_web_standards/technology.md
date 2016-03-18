@@ -19,7 +19,7 @@ HTML is the relatively static content interpreted by the browser for the display
 
 Cascading Style Sheets (CSS) are responsible for defining the aesthetic characteristics of the rendered page. Further, they play a secondary role in accessibility and assistive technologies. Finally, most modern browsers allow CSS to be used instead of JavaScript for things such as animations and device handling.
 
-Client-side languages, which execute by the user’s device. Client-side scripts can degrade battery life on mobile devices, exceed the limits of processor capabilities resulting in longer load times, or be disabled by the user altogether, which creates a poor experience. Therefore, client-side script capabilities should be created only once the core functionality and experience are complete.
+Client-side languages, which are executed on the user’s device. Client-side scripts can degrade battery life on mobile devices, exceed the limits of processor capabilities resulting in longer load times, or be disabled by the user altogether, which creates a poor experience. Therefore, client-side script capabilities should be created only once the core functionality and experience are complete.
 
 ## Bandwidth and Processor Speeds
 
