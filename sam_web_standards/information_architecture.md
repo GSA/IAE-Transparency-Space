@@ -9,15 +9,15 @@ There are two primary ways for a front-end user to find information. The first i
 
 When a front-end user is looking for high-level or general information, the front-end user should be able to navigate the site quickly via static menus. The front-end user may not know exactly where to go or what (s)he is looking for; the architecture can help guide the front-end user by starting broad (categories) and becoming more detailed (a specific notice, wage determination, program, and so on).
 
-When a front-end user knows the information (s)he is looking for, search becomes the better; therefore, front-end users should be allowed to search using text with additional filtering capabilities within a given category.
+When a front-end user knows the information (s)he is looking for, search becomes the better option; therefore, front-end users should be allowed to search using text with additional filtering capabilities within a given category.
 
 ## Navigation
 
 Information Architecture, in terms of navigation, refers to the layout and depth of pages within a website. The *SAM Web Standards* recognizes four levels of navigation for page-related content.
 
-1. **Main Navigation:** Contained within the header and footer components and is used to navigate between system-wide pages (the Legal page, for example) and between categories within the system (Wages, for example). From a front-end user perspective, this results in a change from transition.SAM.gov to something like transition.SAM.gov/wages.
+1. **Main Navigation:** Contained within the [header](http://gsa.github.io/openIAE/sam_web_standards/components/#header) and [footer](http://gsa.github.io/openIAE/sam_web_standards/components/#footer) components and is used to navigate between system-wide pages (the Legal page, for example) and between categories within the system (Wages, for example). From a front-end user perspective, this results in a change from transition.SAM.gov to something like transition.SAM.gov/wages.
 2. **Category Navigation:** Appended to the header area and provides navigation within a category; thereby, allowing each category to have primary pages (“Due to Be Revised” within Wages, for example). Resulting in something like transition.SAM.gov/wages/to-be-revised.
-3. **Sidebar Navigation (up to three levels):** Navigation appearing in a vertical sidebar along the left side of pages using the element from the *US Web Standards*. This type of navigation should be avoided, if possible or practical. Further, if possible, only one level of navigation will make it easier to navigate.
+3. **Sidebar Navigation (up to three levels):** Navigation appearing in a vertical sidebar along the left side of pages using the [Side Navigation](https://playbook.cio.gov/designstandards/sidenav/) component from the *US Web Standards*. This type of navigation should be avoided, if possible or practical. Further, if possible, only one level of navigation will make it easier to navigate.
 
 ## Content
 
