@@ -11,11 +11,11 @@ The header consists of the branded home button, main navigation, and application
 
 ### Unauthenticated
 
-![header with logo left side, sign on button on the right side and "Take me too..." button is below both]( {{site.baseurl}}/assets/img/components/unauthenticated_header.png "Unauthenticated Header"){: .iae-img }
+![header with logo left side, sign on button on the right side and "Take me too..." button is below both]( {{site.baseurl}}/sam_web_standards/images/components/unauthenticated_header.png "Unauthenticated Header"){: .iae-img }
 
 ### Authenticated
 
-![header with logo left side. On the right side is "Hello Jane Smith", alerts badge with 5 alerts, and a user icon for more user options. "Take me too..." button is below both]( {{site.baseurl}}/assets/img/components/authenticated_header.png "Authenticated Header"){: .iae-img }
+![header with logo left side. On the right side is "Hello Jane Smith", alerts badge with 5 alerts, and a user icon for more user options. "Take me too..." button is below both]( {{site.baseurl}}/sam_web_standards/images/components/authenticated_header.png "Authenticated Header"){: .iae-img }
 
 [Accordion with code sample]
 
@@ -25,23 +25,31 @@ The header consists of the branded home button, main navigation, and application
 
 The category navigation allows each service to create pages within the category’s area within transition.SAM.gov. For example, https://transition.SAM.gov/wages/resources would be a page consisting of links to resources related to Wage Determinations and available within the Category Navigation element when a user is anywhere within https://transition.SAM.gov/wages.
 
-[representation of navigation]
+Note: The Category Navigation component is a sub-component of the [Header]({{ site.baseurl }}/sam_web_standards/components/#header).
+
+#### Expanded
+
+[Visual representation - expanded]
+
+#### Collapsed
+
+[Visual representation - collapsed]
+
+[Accordion with code sample]
+
+[Accordion with technical description]
 
 ## Footer
 
 The SAM Web Standards uses the "big footer" defined by the *US Web Design Standards* as a base.
 
-![]( {{site.baseurl}}/assets/img/components/footer.png "Footer"){: .iae-img }
+![]( {{site.baseurl}}/sam_web_standards/images/components/footer.png "Footer"){: .iae-img }
 
-## Page Templates
+## Form Controls
 
-### Default
+The *SAM Web Standards* makes use of the [form controls](https://playbook.cio.gov/designstandards/form-controls/) from the *US Web Standards*. See the *US Web Design Standards* for form templates related to name, address, sign-in, and password reset [form controls](https://playbook.cio.gov/designstandards/form-controls/).
 
-The default page template consists of the Header and Footer with a free-form content area between.
-
-## Form Templates
-
-See the *US Web Design Standards* for form templates related to name, address, sign-in, and password reset ([https://playbook.cio.gov/designstandards/form-controls/](https://playbook.cio.gov/designstandards/form-controls/)).
+**Mobile Consideration:** Data entry on a mobile (handheld, phone, and so on) device can be tedious; therefore, when designing and developing forms, minimize the use of text input fields and large text areas.
 
 ### Application/Category Search Forms
 
@@ -57,13 +65,13 @@ Used on pages where content spans multiple applications wherein a front-end user
 
 ## Search Result
 
-Used to display an individual results within a list of search results. Contains content information/summary and metadata related to the content. Metadata generally represent optional filters, which can be applied by the user, and are grouped together to easily discern between result content and metadata.
+Used to display an individual result within a list of search results. Contains content information/summary and metadata related to the content. Metadata generally represent optional filters, which can be applied by the user, and are grouped together to easily discern between result content and metadata.
 
 [Need image or live coded results, with technical description]
 
 ## Pagination
 
-The pagination element is used in circumstances where the content being displayed within a site area that cannot be fit on one page (search results, for example). If JavaScript is enabled, continuous scrolling methods can be used in place of the pagination element; however, this element should exist in case JavaScript is disabled.
+The pagination element is used in circumstances where the content being displayed cannot be accommodated in a single page (search results, for example). If JavaScript is enabled, continuous scrolling methods can be used in place of the pagination element; however, this element should exist in case JavaScript is disabled.
 
 [representation of pagination mechanism]
 
