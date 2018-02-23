@@ -8,6 +8,8 @@ title: Home
 
 Welcome to openIAE! openIAE is an open source project managed by the U.S. General Service Administration’s (GSA) Integrated Award Environment (IAE). This site is the home of code, documents and information related to openIAE.
 
+Testing build runs as expected.
+
 #### Organization
 
 This site is organized into five content areas: 
